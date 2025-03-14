@@ -1,21 +1,11 @@
 extends Node3D
 
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	var weightRoomTP = $"."
-	var player = $"../ProtoController"
-	pass # Replace with function body.
+	# Connect the Area3D signal
+	var area = $Area3D
+	area.body_entered.connect(_on_body_entered)
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	if ()
-	pass
-
-func _on_body_entered() -> void:
-	#get_tree().change_scene_to_file("res://scenes/weight_room.tscn")
-
-func _on_area_3d_body_entered(body):
-	print($".".name, " entered the area!")
-	
-	
+func _on_body_entered(body: Node3D) -> void:
+	if body is CharacterBody3D:  # Check if it's a player or character
+		print(body.name, " entered the teleport!")
+		get_tree().change_scene_to_file("res://scenes/weight_room.tscn")  # Teleport player
