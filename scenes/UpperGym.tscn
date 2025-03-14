@@ -84,7 +84,7 @@ use_collision = true
 size = Vector3(11.31, 0.5, 7)
 
 [node name="ProtoController" parent="." instance=ExtResource("1_4lmt2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.81361, 0.612553, -9.36895)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.84707, 0.364342, -7.16318)
 
 [node name="Marker3D" type="Marker3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.9, 0.4, -3.8)
@@ -97,7 +97,19 @@ script = ExtResource("2_2uxxd")
 use_collision = true
 
 [node name="Rowing" type="CSGBox3D" parent="Machines"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.76094, 0.679007, -5.82404)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.76094, 0.679007, -5.62204)
+size = Vector3(1.93851, 0.594971, 0.625732)
+
+[node name="Rowing2" type="CSGBox3D" parent="Machines"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.761, 0.679, -6.83682)
+size = Vector3(1.93851, 0.594971, 0.625732)
+
+[node name="Rowing3" type="CSGBox3D" parent="Machines"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.761, 0.679, -8.10172)
+size = Vector3(1.93851, 0.594971, 0.625732)
+
+[node name="Rowing4" type="CSGBox3D" parent="Machines"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.761, 0.679, -9.38345)
 size = Vector3(1.93851, 0.594971, 0.625732)
 
 [node name="Teleports - Enter to Teleport" type="Node3D" parent="."]
