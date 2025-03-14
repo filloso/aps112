@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://c44vh54h4ttve"]
 
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_4lmt2"]
-[ext_resource type="Script" uid="uid://d1tfaglf11k5s" path="res://addons/measuring_tape/measuring_tape_3d.gd" id="2_2uxxd"]
+[ext_resource type="Script" path="res://addons/measuring_tape/measuring_tape_3d.gd" id="2_2uxxd"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_0f2jy"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)

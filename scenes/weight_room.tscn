@@ -34,19 +34,24 @@ size = Vector3(15.5, 0.5, 9.658)
 use_collision = true
 
 [node name="Wall" type="CSGBox3D" parent="Walls"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.1893, 2.17168, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.87636, 2.17168, 0)
 size = Vector3(0.5, 4, 9.658)
 
 [node name="Wall2" type="CSGBox3D" parent="Walls"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.02156, 2.22749, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.90235, 2.172, -0.121072)
 size = Vector3(0.5, 4, 9.658)
 
+[node name="Door" type="CSGBox3D" parent="Walls/Wall2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0799999, -1.01138, 3.40204)
+operation = 2
+size = Vector3(0.8, 1.8, 1)
+
 [node name="Wall3" type="CSGBox3D" parent="Walls"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.17486, 5.06332)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00462341, 2.172, 4.88992)
 size = Vector3(15.5, 4, 0.5)
 
 [node name="Wall4" type="CSGBox3D" parent="Walls"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.111265, 2.41712, -5.08702)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0436473, 2.172, -5.11255)
 size = Vector3(15.5, 4, 0.5)
 
 [node name="ProtoController" parent="." instance=ExtResource("1_k2agc")]
