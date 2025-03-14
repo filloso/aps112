@@ -1,6 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://c80k3yx50bqqt"]
+[gd_scene load_steps=7 format=3 uid="uid://c80k3yx50bqqt"]
 
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_6ref0"]
+[ext_resource type="PackedScene" uid="uid://dveunjwnwphm5" path="res://scenes/upperGymTeleporter.tscn" id="2_n20i7"]
+[ext_resource type="PackedScene" uid="uid://dcg38qlvi56h1" path="res://scenes/weightRoomTeleporter.tscn" id="3_hqpe0"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_gtkt8"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -51,8 +53,20 @@ size = Vector3(16.52, 2.57, 0.1)
 [node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
 use_collision = true
 
-[node name="Floor" type="CSGBox3D" parent="CSGCombiner3D"]
+[node name="CorridorFloor" type="CSGBox3D" parent="CSGCombiner3D"]
 size = Vector3(16.52, 0.5, 1.85)
 
+[node name="OutsideFloor" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.8101, -2.38419e-07, 0.14039)
+size = Vector3(5.12088, 0.5, 6.76167)
+
 [node name="ProtoController" parent="." instance=ExtResource("1_6ref0")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.44542, 0, -0.0307596)
+transform = Transform3D(-0.0823855, -0.0016162, -0.996599, -0.00476502, 0.999988, -0.00122778, 0.996589, 0.00464766, -0.0823922, -6.44542, 0, -0.0307596)
+
+[node name="Teleports" type="Node3D" parent="."]
+
+[node name="upperGymTeleporter" parent="Teleports" instance=ExtResource("2_n20i7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.7473, 0.919681, -1.72147)
+
+[node name="weightRoomTeleporter" parent="Teleports" instance=ExtResource("3_hqpe0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.7704, 0.849545, 2.12414)
