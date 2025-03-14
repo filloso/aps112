@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dnqbbf76xop42"]
+
+[node name="Teleport" type="Node3D"]
+
+[node name="Teleport" type="CSGSphere3D" parent="."]
+use_collision = true
