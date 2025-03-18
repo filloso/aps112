@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://c44vh54h4ttve"]
+[gd_scene load_steps=9 format=3 uid="uid://c44vh54h4ttve"]
 
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_4lmt2"]
 [ext_resource type="PackedScene" uid="uid://dcg38qlvi56h1" path="res://scenes/weightRoomTeleporter.tscn" id="1_6fvth"]
 [ext_resource type="Script" path="res://addons/measuring_tape/measuring_tape_3d.gd" id="2_2uxxd"]
+[ext_resource type="PackedScene" uid="uid://dxpk8fwu246af" path="res://machines/concept_2_rowing_machines.tscn" id="3_3m4h0"]
 [ext_resource type="PackedScene" uid="uid://bpw88aac1h5en" path="res://scenes/corridorTeleporter.tscn" id="4_obog8"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_0f2jy"]
@@ -96,21 +97,17 @@ script = ExtResource("2_2uxxd")
 [node name="Machines" type="CSGCombiner3D" parent="."]
 use_collision = true
 
-[node name="Rowing" type="CSGBox3D" parent="Machines"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.76094, 0.679007, -5.62204)
-size = Vector3(1.93851, 0.594971, 0.625732)
+[node name="Concept2RowingMachines" parent="Machines" instance=ExtResource("3_3m4h0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.458, 0.444332, -5.9)
 
-[node name="Rowing2" type="CSGBox3D" parent="Machines"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.761, 0.679, -6.83682)
-size = Vector3(1.93851, 0.594971, 0.625732)
+[node name="Concept2RowingMachines2" parent="Machines" instance=ExtResource("3_3m4h0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.458, 0.444332, -7.11026)
 
-[node name="Rowing3" type="CSGBox3D" parent="Machines"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.761, 0.679, -8.10172)
-size = Vector3(1.93851, 0.594971, 0.625732)
+[node name="Concept2RowingMachines3" parent="Machines" instance=ExtResource("3_3m4h0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.458, 0.444332, -8.30071)
 
-[node name="Rowing4" type="CSGBox3D" parent="Machines"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.761, 0.679, -9.38345)
-size = Vector3(1.93851, 0.594971, 0.625732)
+[node name="Concept2RowingMachines4" parent="Machines" instance=ExtResource("3_3m4h0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.458, 0.444332, -9.66941)
 
 [node name="Teleports - Enter to Teleport" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.30444, 0.940683, 1.32892)
