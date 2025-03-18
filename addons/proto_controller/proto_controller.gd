@@ -22,7 +22,7 @@ extends CharacterBody3D
 ## Normal speed.
 @export var base_speed : float = 3.5
 ## Speed of jump.
-@export var jump_velocity : float = 9.5
+@export var jump_velocity : float = 5.5
 ## How fast do we run?
 @export var sprint_speed : float = 7.0
 ## How fast do we freefly?
