@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://bs72ogkvdd7d6"]
+[gd_scene load_steps=7 format=3 uid="uid://bs72ogkvdd7d6"]
 
 [ext_resource type="Script" path="res://addons/proto_controller/proto_controller.gd" id="1_ucva2"]
 [ext_resource type="PackedScene" uid="uid://d3v43s00wx2dj" path="res://machines/wheelchair.tscn" id="2_aocs5"]
@@ -14,12 +14,29 @@ height = 1.65
 radius = 0.41029
 height = 1.63975
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_48ui3"]
+size = Vector3(0.6, 0.9, 0.9)
+
 [node name="ProtoController" type="CharacterBody3D"]
 script = ExtResource("1_ucva2")
+can_move = null
+has_gravity = null
+can_jump = null
+can_sprint = null
+can_freefly = null
+look_speed = null
+base_speed = null
+jump_velocity = null
+sprint_speed = null
+freefly_speed = null
+torque_strength = null
 input_left = "move_left"
 input_right = "move_right"
 input_forward = "move_up"
 input_back = "move_down"
+input_jump = null
+input_sprint = null
+input_freefly = null
 
 [node name="Mesh" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.835245, 0)
@@ -42,3 +59,12 @@ far = 2000.0
 
 [node name="Wheelchair" parent="." instance=ExtResource("2_aocs5")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0.377065, -1)
+
+[node name="RigidBody3D" type="RigidBody3D" parent="."]
+mass = 10.642
+linear_damp = 0.2
+angular_damp = 0.2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.77636e-15, 0.45, -0.95)
+shape = SubResource("BoxShape3D_48ui3")

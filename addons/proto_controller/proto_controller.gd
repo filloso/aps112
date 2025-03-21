@@ -28,6 +28,8 @@ extends CharacterBody3D
 ## How fast do we freefly?
 @export var freefly_speed : float = 25.0
 
+@export var torque_strength : float = 5.0
+
 @export_group("Input Actions")
 ## Name of Input Action to move Left.
 @export var input_left : String = "ui_left"
@@ -52,6 +54,7 @@ var freeflying : bool = false
 ## IMPORTANT REFERENCES
 @onready var head: Node3D = $Head
 @onready var collider: CollisionShape3D = $Collider
+@onready var wheelchairCollider: CollisionShape3D = $StaticBody3D/CollisionShape3D
 
 func _ready() -> void:
 	check_input_mappings()
@@ -114,6 +117,7 @@ func _physics_process(delta: float) -> void:
 	else:
 		velocity.x = 0
 		velocity.y = 0
+		
 	
 	# Use velocity to actually move
 	move_and_slide()
@@ -134,11 +138,13 @@ func rotate_look(rot_input : Vector2):
 
 func enable_freefly():
 	collider.disabled = true
+	wheelchairCollider.disabled = true
 	freeflying = true
 	velocity = Vector3.ZERO
 
 func disable_freefly():
 	collider.disabled = false
+	wheelchairCollider.disabled = false
 	freeflying = false
 
 
