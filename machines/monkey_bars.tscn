@@ -1,0 +1,156 @@
+[gd_scene load_steps=2 format=3 uid="uid://3666jfguamgv"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vjhxx"]
+size = Vector3(4.2973, 2.72174, 1.81531)
+
+[node name="monkey_bars" type="Node3D"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+visible = false
+size = Vector3(4.267, 2.74, 1.829)
+
+[node name="MonkeyBars" type="CSGCombiner3D" parent="."]
+
+[node name="6ft" type="CSGCombiner3D" parent="MonkeyBars"]
+
+[node name="MonkeyBar1" type="CSGCylinder3D" parent="MonkeyBars/6ft"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0.243359, 1.31438, 0)
+radius = 0.04
+height = 1.829
+
+[node name="MonkeyBar2" type="CSGCylinder3D" parent="MonkeyBars/6ft"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.05489, 1.31438, 0)
+radius = 0.04
+height = 1.829
+
+[node name="MonkeyBar3" type="CSGCylinder3D" parent="MonkeyBars/6ft"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 2.08942, 1.31438, 0)
+radius = 0.04
+height = 1.829
+
+[node name="MonkeyBar4" type="CSGCylinder3D" parent="MonkeyBars/6ft"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 1.48796, 1.31438, 0)
+radius = 0.04
+height = 1.829
+
+[node name="MonkeyBar5" type="CSGCylinder3D" parent="MonkeyBars/6ft"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0.872185, 1.31438, 0)
+radius = 0.04
+height = 1.829
+
+[node name="MonkeyBar6" type="CSGCylinder3D" parent="MonkeyBars/6ft"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.332795, 1.31438, 0)
+radius = 0.04
+height = 1.829
+
+[node name="MonkeyBar7" type="CSGCylinder3D" parent="MonkeyBars/6ft"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.9438, 1.31438, 0)
+radius = 0.04
+height = 1.829
+
+[node name="MonkeyBar8" type="CSGCylinder3D" parent="MonkeyBars/6ft"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -1.5233, 1.31438, 0)
+radius = 0.04
+height = 1.829
+
+[node name="MonkeyBar9" type="CSGCylinder3D" parent="MonkeyBars/6ft"]
+transform = Transform3D(-4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, -0.0271085, 0.861756, 0.855308)
+radius = 0.04
+height = 1.829
+
+[node name="MonkeyBar10" type="CSGCylinder3D" parent="MonkeyBars/6ft"]
+transform = Transform3D(-4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, -0.0271085, 0.861756, -0.840287)
+radius = 0.04
+height = 1.829
+
+[node name="4ft" type="CSGCombiner3D" parent="MonkeyBars"]
+
+[node name="4ftMonkeyBar1" type="CSGCylinder3D" parent="MonkeyBars/4ft"]
+transform = Transform3D(-4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, 1.51536, 0.862434, -0.851467)
+radius = 0.04
+height = 1.21
+
+[node name="4ftMonkeyBar2" type="CSGCylinder3D" parent="MonkeyBars/4ft"]
+transform = Transform3D(-4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, -1.47256, 0.862434, -0.851467)
+radius = 0.04
+height = 1.21
+
+[node name="4ftMonkeyBar3" type="CSGCylinder3D" parent="MonkeyBars/4ft"]
+transform = Transform3D(-4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, -1.47256, 0.862434, 0.831525)
+radius = 0.04
+height = 1.21
+
+[node name="4ftMonkeyBar4" type="CSGCylinder3D" parent="MonkeyBars/4ft"]
+transform = Transform3D(-4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, 1.51664, 0.862434, 0.831525)
+radius = 0.04
+height = 1.21
+
+[node name="9ftUpright" type="CSGCombiner3D" parent="."]
+
+[node name="9fUpright1" type="CSGBox3D" parent="9ftUpright"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.09254, 0, 0.862396)
+size = Vector3(0.1, 2.74, 0.1)
+
+[node name="9fUpright2" type="CSGBox3D" parent="9ftUpright"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.08286, 0, 0.8464)
+size = Vector3(0.1, 2.74, 0.1)
+
+[node name="9fUpright3" type="CSGBox3D" parent="9ftUpright"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.08286, 0, -0.840426)
+size = Vector3(0.1, 2.74, 0.1)
+
+[node name="9fUpright4" type="CSGBox3D" parent="9ftUpright"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.09543, -5.96046e-08, -0.840898)
+size = Vector3(0.1, 2.74, 0.1)
+
+[node name="9fUpright5" type="CSGBox3D" parent="9ftUpright"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.876153, -5.96046e-08, -0.840898)
+size = Vector3(0.1, 2.74, 0.1)
+
+[node name="9fUpright7" type="CSGBox3D" parent="9ftUpright"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.912262, -5.96046e-08, 0.843283)
+size = Vector3(0.1, 2.74, 0.1)
+
+[node name="9fUpright10" type="CSGBox3D" parent="9ftUpright"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.912262, -5.96046e-08, -0.839186)
+size = Vector3(0.1, 2.74, 0.1)
+
+[node name="9fUpright8" type="CSGBox3D" parent="9ftUpright"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.882273, -5.96046e-08, 0.873139)
+size = Vector3(0.1, 2.74, 0.1)
+
+[node name="6ftCrossbar" type="CSGCombiner3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.411138, 0)
+
+[node name="6ftCrossbar1" type="CSGBox3D" parent="6ftCrossbar"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.898892, -0.843369)
+size = Vector3(1.82, 0.1, 0.1)
+
+[node name="6ftCrossbar2" type="CSGBox3D" parent="6ftCrossbar"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.898892, 0.84735)
+size = Vector3(1.82, 0.1, 0.1)
+
+[node name="4ftCrossbar" type="CSGCombiner3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.417909, 0)
+
+[node name="4ftCrossbar1" type="CSGBox3D" parent="4ftCrossbar"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.45537, 0.895962, 0.843939)
+size = Vector3(1.21, 0.1, 0.1)
+
+[node name="4ftCrossbar2" type="CSGBox3D" parent="4ftCrossbar"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.45537, 0.895962, -0.844723)
+size = Vector3(1.21, 0.1, 0.1)
+
+[node name="4ftCrossbar3" type="CSGBox3D" parent="4ftCrossbar"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.43319, 0.895962, -0.844723)
+size = Vector3(1.21, 0.1, 0.1)
+
+[node name="4ftCrossbar4" type="CSGBox3D" parent="4ftCrossbar"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.43319, 0.895962, 0.867078)
+size = Vector3(1.21, 0.1, 0.1)
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00308228, 0.00888062, 0.00701904)
+shape = SubResource("BoxShape3D_vjhxx")
