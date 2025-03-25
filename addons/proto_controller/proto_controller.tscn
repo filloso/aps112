@@ -1,7 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://bs72ogkvdd7d6"]
+[gd_scene load_steps=5 format=3 uid="uid://bs72ogkvdd7d6"]
 
 [ext_resource type="Script" path="res://addons/proto_controller/proto_controller.gd" id="1_ucva2"]
-[ext_resource type="PackedScene" uid="uid://d3v43s00wx2dj" path="res://machines/wheelchair.tscn" id="2_aocs5"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iof21"]
 albedo_color = Color(0.91806, 0.575202, 0.222449, 1)
@@ -39,6 +38,3 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00525188, 0.180116, -0.001
 fov = 60.0
 near = 0.15
 far = 2000.0
-
-[node name="Wheelchair" parent="." instance=ExtResource("2_aocs5")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0.377065, -1)

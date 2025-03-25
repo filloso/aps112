@@ -54,7 +54,7 @@ var freeflying : bool = false
 ## IMPORTANT REFERENCES
 @onready var head: Node3D = $Head
 @onready var collider: CollisionShape3D = $Collider
-@onready var wheelchairCollider: CollisionShape3D = $StaticBody3D/CollisionShape3D
+#@onready var wheelchairCollider: CollisionShape3D = $StaticBody3D/CollisionShape3D
 
 func _ready() -> void:
 	check_input_mappings()
@@ -138,13 +138,13 @@ func rotate_look(rot_input : Vector2):
 
 func enable_freefly():
 	collider.disabled = true
-	wheelchairCollider.disabled = true
+	#wheelchairCollider.disabled = true
 	freeflying = true
 	velocity = Vector3.ZERO
 
 func disable_freefly():
 	collider.disabled = false
-	wheelchairCollider.disabled = false
+	#wheelchairCollider.disabled = false
 	freeflying = false
 
 
