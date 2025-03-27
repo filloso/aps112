@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 [gd_scene load_steps=13 format=3 uid="uid://c44vh54h4ttve"]
+=======
+[gd_scene load_steps=11 format=3 uid="uid://c44vh54h4ttve"]
+>>>>>>> parent of 1532b63 (press e to fly)
 =======
 [gd_scene load_steps=11 format=3 uid="uid://c44vh54h4ttve"]
 >>>>>>> parent of 1532b63 (press e to fly)
@@ -11,10 +15,13 @@
 [ext_resource type="PackedScene" uid="uid://d3v43s00wx2dj" path="res://machines/wheelchair.tscn" id="4_dw2rt"]
 [ext_resource type="PackedScene" uid="uid://bpw88aac1h5en" path="res://scenes/corridorTeleporter.tscn" id="4_obog8"]
 <<<<<<< HEAD
+<<<<<<< HEAD
 [ext_resource type="PackedScene" uid="uid://c8ke11ad84bd3" path="res://machines/upper_gym_machines/gravitron.tscn" id="6_1c7iv"]
 [ext_resource type="PackedScene" uid="uid://bkoal4hibkdvb" path="res://machines/upper_gym_machines/marpo_vmx.tscn" id="7_0euaw"]
 [ext_resource type="PackedScene" uid="uid://3666jfguamgv" path="res://machines/upper_gym_machines/monkey_bars.tscn" id="7_g6ne3"]
 =======
+=======
+>>>>>>> parent of 1532b63 (press e to fly)
 [ext_resource type="PackedScene" uid="uid://3666jfguamgv" path="res://machines/monkey_bars.tscn" id="7_g6ne3"]
 >>>>>>> parent of 1532b63 (press e to fly)
 
@@ -98,7 +105,11 @@ size = Vector3(11.31, 0.5, 7)
 
 [node name="ProtoController" parent="." instance=ExtResource("1_4lmt2")]
 <<<<<<< HEAD
+<<<<<<< HEAD
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.37805, 0.367481, -7.6807)
+=======
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.84707, 0.364342, -7.16318)
+>>>>>>> parent of 1532b63 (press e to fly)
 =======
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.84707, 0.364342, -7.16318)
 >>>>>>> parent of 1532b63 (press e to fly)
@@ -131,6 +142,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.458, 0.444332, -7.11026)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.458, 0.444332, -5.9)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 [node name="monkey_bars" parent="Machines" instance=ExtResource("7_g6ne3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.36984, 1.71904, -18.2618)
 
@@ -140,6 +152,8 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -4.509
 [node name="marpo_vmx" parent="Machines" instance=ExtResource("7_0euaw")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2.97167, 1.64947, -11.0011)
 
+=======
+>>>>>>> parent of 1532b63 (press e to fly)
 =======
 >>>>>>> parent of 1532b63 (press e to fly)
 [node name="Teleports - Enter to Teleport" type="Node3D" parent="."]
