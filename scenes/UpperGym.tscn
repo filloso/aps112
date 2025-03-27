@@ -1,13 +1,14 @@
-[gd_scene load_steps=12 format=3 uid="uid://c44vh54h4ttve"]
+[gd_scene load_steps=13 format=3 uid="uid://c44vh54h4ttve"]
 
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_4lmt2"]
 [ext_resource type="PackedScene" uid="uid://dcg38qlvi56h1" path="res://scenes/weightRoomTeleporter.tscn" id="1_6fvth"]
 [ext_resource type="Script" path="res://addons/measuring_tape/measuring_tape_3d.gd" id="2_2uxxd"]
-[ext_resource type="PackedScene" uid="uid://dxpk8fwu246af" path="res://machines/concept_2_rowing_machines.tscn" id="3_3m4h0"]
+[ext_resource type="PackedScene" uid="uid://dxpk8fwu246af" path="res://machines/upper_gym_machines/concept_2_rowing_machines.tscn" id="3_3m4h0"]
 [ext_resource type="PackedScene" uid="uid://d3v43s00wx2dj" path="res://machines/wheelchair.tscn" id="4_dw2rt"]
 [ext_resource type="PackedScene" uid="uid://bpw88aac1h5en" path="res://scenes/corridorTeleporter.tscn" id="4_obog8"]
-[ext_resource type="PackedScene" uid="uid://c8ke11ad84bd3" path="res://machines/gravitron.tscn" id="6_1c7iv"]
-[ext_resource type="PackedScene" uid="uid://3666jfguamgv" path="res://machines/monkey_bars.tscn" id="7_g6ne3"]
+[ext_resource type="PackedScene" uid="uid://c8ke11ad84bd3" path="res://machines/upper_gym_machines/gravitron.tscn" id="6_1c7iv"]
+[ext_resource type="PackedScene" uid="uid://bkoal4hibkdvb" path="res://machines/upper_gym_machines/marpo_vmx.tscn" id="7_0euaw"]
+[ext_resource type="PackedScene" uid="uid://3666jfguamgv" path="res://machines/upper_gym_machines/monkey_bars.tscn" id="7_g6ne3"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_0f2jy"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -88,7 +89,7 @@ use_collision = true
 size = Vector3(11.31, 0.5, 7)
 
 [node name="ProtoController" parent="." instance=ExtResource("1_4lmt2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.58008, 0.367481, -7.23672)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.37805, 0.367481, -7.6807)
 
 [node name="Marker3D" type="Marker3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.03452, 0.470018, -4.85245)
@@ -122,7 +123,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.458, 0.444332, -5.9)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.36984, 1.71904, -18.2618)
 
 [node name="gravitron" parent="Machines" instance=ExtResource("6_1c7iv")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -4.19043, 1.43596, -10.783)
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -4.50968, 1.43596, -10.783)
+
+[node name="marpo_vmx" parent="Machines" instance=ExtResource("7_0euaw")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2.97167, 1.64947, -11.0011)
 
 [node name="Teleports - Enter to Teleport" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.30444, 0.940683, 1.32892)
