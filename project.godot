@@ -12,27 +12,9 @@ config_version=5
 
 config/name="aps112"
 run/main_scene="res://scenes/UpperGym.tscn"
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-config/features=PackedStringArray("4.3", "Forward Plus")
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> Stashed changes
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
->>>>>>> Stashed changes
-=======
-config/icon="res://icon.svg"
->>>>>>> parent of 1532b63 (press e to fly)
-=======
-config/icon="res://icon.svg"
->>>>>>> parent of 1532b63 (press e to fly)
-=======
-config/icon="res://icon.svg"
->>>>>>> parent of 1532b63 (press e to fly)
+
 
 [input]
 
