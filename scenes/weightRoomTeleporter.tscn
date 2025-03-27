@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://dcg38qlvi56h1"]
 
-[ext_resource type="Script" path="res://scripts/weight_room_teleporter.gd" id="1_agvvg"]
+[ext_resource type="Script" uid="uid://cin0kprxq5mye" path="res://scripts/weight_room_teleporter.gd" id="1_agvvg"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_fl1n8"]
 

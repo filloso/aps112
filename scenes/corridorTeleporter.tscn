@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bpw88aac1h5en"]
 
-[ext_resource type="Script" path="res://scripts/corridor_teleporter.gd" id="1_enht0"]
+[ext_resource type="Script" uid="uid://liaphlxtb0e5" path="res://scripts/corridor_teleporter.gd" id="1_enht0"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_putb6"]
 
