@@ -6,11 +6,11 @@
 albedo_color = Color(0.91806, 0.575202, 0.222449, 1)
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_ucva2"]
-radius = 0.4
+radius = 0.19
 height = 1.65
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_iof21"]
-radius = 0.41029
+radius = 0.247445
 height = 1.63975
 
 [node name="ProtoController" type="CharacterBody3D"]
@@ -21,7 +21,7 @@ input_forward = "move_up"
 input_back = "move_down"
 
 [node name="Mesh" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.835245, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00180173, 0.838944, -0.0231319)
 material_override = SubResource("StandardMaterial3D_iof21")
 cast_shadow = 0
 mesh = SubResource("CapsuleMesh_ucva2")
@@ -34,7 +34,7 @@ shape = SubResource("CapsuleShape3D_iof21")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3383, 0)
 
 [node name="Camera3D" type="Camera3D" parent="Head"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00525188, 0.180116, -0.00198722)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00995326, -0.00123763, -0.00193215)
 fov = 60.0
 near = 0.15
 far = 2000.0
