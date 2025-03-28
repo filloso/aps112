@@ -1,4 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://yngltng6lfg4"]
+[gd_scene load_steps=7 format=3 uid="uid://yngltng6lfg4"]
+
+[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_hav21"]
+[ext_resource type="PackedScene" uid="uid://dcg38qlvi56h1" path="res://scenes/weightRoomTeleporter.tscn" id="2_5ur10"]
+[ext_resource type="PackedScene" uid="uid://bpw88aac1h5en" path="res://scenes/corridorTeleporter.tscn" id="3_1kr7m"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_g5lea"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -16,6 +20,7 @@ glow_enabled = true
 [node name="Node3D" type="Node3D"]
 
 [node name="layout" type="CSGCombiner3D" parent="."]
+use_collision = true
 
 [node name="railings" type="CSGCombiner3D" parent="layout"]
 
@@ -55,9 +60,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.8958, 1.76086, 0)
 size = Vector3(0.35, 3.272, 11.31)
 
 [node name="Door" type="CSGBox3D" parent="layout"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.8958, 0.611607, -3.50369)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.8958, 1.02543, -3.50369)
 operation = 2
-size = Vector3(0.35, 2, 0.8)
+size = Vector3(0.35, 1.8, 0.8)
 
 [node name="Floor2" type="CSGBox3D" parent="layout"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.5618, 0, 0)
@@ -72,3 +77,15 @@ shadow_enabled = true
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_5rvcq")
+
+[node name="ProtoController" parent="." instance=ExtResource("1_hav21")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -9.66616, 0.078113, -3.95672)
+
+[node name="teleporters" type="Node3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -8.26676, 0, -2.65686)
+
+[node name="weightRoomTeleporter" parent="." instance=ExtResource("2_5ur10")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.6796, 1.03096, -2.38809)
+
+[node name="corridorTeleporter" parent="." instance=ExtResource("3_1kr7m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.9657, 0.612, 3.57774)

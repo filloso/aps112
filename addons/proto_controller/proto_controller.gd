@@ -49,7 +49,7 @@ extends CharacterBody3D
 var mouse_captured : bool = false
 var look_rotation : Vector2
 var move_speed : float = 0.0
-var freeflying : bool = false
+var freeflying : bool = false # DO NOTTTTT TURN TRUE
 
 ## IMPORTANT REFERENCES
 @onready var head: Node3D = $Head

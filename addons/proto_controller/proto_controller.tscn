@@ -6,11 +6,11 @@
 albedo_color = Color(0.91806, 0.575202, 0.222449, 1)
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_ucva2"]
-radius = 0.4
+radius = 0.25
 height = 1.65
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_iof21"]
-radius = 0.41029
+radius = 0.263673
 height = 1.63975
 
 [node name="ProtoController" type="CharacterBody3D"]
@@ -31,7 +31,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.835, 0)
 shape = SubResource("CapsuleShape3D_iof21")
 
 [node name="Head" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3383, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2383, 0)
 
 [node name="Camera3D" type="Camera3D" parent="Head"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00525188, 0.180116, -0.00198722)

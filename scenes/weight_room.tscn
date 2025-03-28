@@ -68,7 +68,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0436473, 2.172, -5.11255)
 size = Vector3(15.5, 4, 0.5)
 
 [node name="ProtoController" parent="." instance=ExtResource("1_k2agc")]
-transform = Transform3D(0.0366611, 0, 0.999328, 0, 1, 0, -0.999328, 0, 0.0366611, 3.42407, 0.249998, 0.585521)
+transform = Transform3D(0.0366611, 0, 0.999328, 0, 1, 0, -0.999328, 0, 0.0366611, 7.22407, 0.249998, 1.48552)
 
 [node name="Teleports" type="Node3D" parent="."]
 

@@ -8,4 +8,4 @@ func _ready() -> void:
 func _on_body_entered(body: Node3D) -> void:
 	if body is CharacterBody3D:  # Check if it's a player or character
 		#print(body.name, " entered the teleport!")
-		get_tree().change_scene_to_file("res://scenes/UpperGym.tscn")  # Teleport player
+		get_tree().change_scene_to_file("res://scenes/upper_gym.tscn")  # Teleport player
