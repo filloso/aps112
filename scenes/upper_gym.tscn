@@ -1,9 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://yngltng6lfg4"]
+[gd_scene load_steps=11 format=3 uid="uid://yngltng6lfg4"]
 
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_hav21"]
 [ext_resource type="PackedScene" uid="uid://dcg38qlvi56h1" path="res://scenes/weightRoomTeleporter.tscn" id="2_5ur10"]
 [ext_resource type="PackedScene" uid="uid://bpw88aac1h5en" path="res://scenes/corridorTeleporter.tscn" id="3_1kr7m"]
 [ext_resource type="PackedScene" uid="uid://dxpk8fwu246af" path="res://machines/upper_gym_machines/concept_2_rowing_machines.tscn" id="4_5ur10"]
+[ext_resource type="PackedScene" uid="uid://3666jfguamgv" path="res://machines/upper_gym_machines/monkey_bars.tscn" id="5_1kr7m"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_g5lea"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -228,6 +229,57 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.06269, 1.04867, 1.90322)
 use_collision = true
 size = Vector3(1.65, 1.83, 0.99)
 
+[node name="InclinePress" type="CSGBox3D" parent="machines/middle"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.07489, 0.829181, -1.21227)
+use_collision = true
+size = Vector3(1.07, 1.37, 1.55)
+
+[node name="LowerBack" type="CSGBox3D" parent="machines/middle"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.05733, 0.809196, 0.92976)
+use_collision = true
+size = Vector3(0.97, 1.37, 1.42)
+
+[node name="VerticalChest" type="CSGBox3D" parent="machines/middle"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.553244, 1.04573, -1.25302)
+use_collision = true
+size = Vector3(0.99, 1.83, 1.45)
+
+[node name="OverheadPress" type="CSGBox3D" parent="machines/middle"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.582538, 0.860245, 0.913001)
+use_collision = true
+size = Vector3(1.041, 1.47, 1.448)
+
+[node name="monkey_bars" parent="machines/middle" instance=ExtResource("5_1kr7m")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 3.80727, 1.495, -0.149691)
+
+[node name="RearDelt" type="CSGBox3D" parent="machines/middle"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.06366, 1.10438, 0.849597)
+size = Vector3(0.889, 1.85, 1.702)
+
+[node name="MidRow" type="CSGBox3D" parent="machines/middle"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.49106, 0.811894, 0.881182)
+size = Vector3(0.965, 1.37, 1.575)
+
+[node name="PecFly" type="CSGBox3D" parent="machines/middle"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.08547, 0.896909, -1.28356)
+size = Vector3(0.94, 1.52, 1.524)
+
+[node name="Pullover" type="CSGBox3D" parent="machines/middle"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.52535, 1.0078, -1.3115)
+size = Vector3(1.168, 1.7, 1.448)
+
+[node name="Abdominal" type="CSGBox3D" parent="machines/middle"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.2755, 0.81286, 1.21326)
+size = Vector3(1.473, 1.37, 0.889)
+
+[node name="Abdominal2" type="CSGBox3D" parent="machines/middle"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.2755, 0.81286, -0.213029)
+size = Vector3(1.473, 1.37, 0.889)
+
+[node name="RotaryTorso" type="CSGBox3D" parent="machines/middle"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.4488, 0.869513, -1.53357)
+size = Vector3(1.118, 1.448, 0.914)
+
 [node name="bottom" type="Node3D" parent="machines"]
 
 [node name="CurvedTreadmill" type="CSGBox3D" parent="machines/bottom"]
@@ -296,6 +348,6 @@ use_collision = true
 size = Vector3(1.27, 0.813, 1.65)
 
 [node name="measuring" type="CSGBox3D" parent="machines"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.20578, 0.670847, 1.10868)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.7306, 0.63214, -0.869546)
 visible = false
-size = Vector3(2.31, 1, 0.61)
+size = Vector3(0.55, 1, 0.41)

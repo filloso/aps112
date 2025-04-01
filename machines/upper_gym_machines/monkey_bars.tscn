@@ -154,3 +154,38 @@ size = Vector3(1.21, 0.1, 0.1)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00308228, 0.00888062, 0.00701904)
 shape = SubResource("BoxShape3D_vjhxx")
+
+[node name="3ftSquatterArms" type="CSGCombiner3D" parent="."]
+use_collision = true
+
+[node name="3ftSquatterArms" type="CSGBox3D" parent="3ftSquatterArms"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.887902, -0.479893, 1.3726)
+size = Vector3(0.1, 0.1, 0.91)
+
+[node name="3ftSquatterArms3" type="CSGBox3D" parent="3ftSquatterArms"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.910583, -0.479893, 1.3726)
+size = Vector3(0.1, 0.1, 0.91)
+
+[node name="3ftSquatterArms4" type="CSGBox3D" parent="3ftSquatterArms"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.08055, -0.479893, 1.37252)
+size = Vector3(0.1, 0.1, 0.91)
+
+[node name="3ftSquatterArms2" type="CSGBox3D" parent="3ftSquatterArms"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.09827, -0.479893, 1.3726)
+size = Vector3(0.1, 0.1, 0.91)
+
+[node name="3ftSquatterArms5" type="CSGBox3D" parent="3ftSquatterArms"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.887902, -0.479893, -1.33952)
+size = Vector3(0.1, 0.1, 0.91)
+
+[node name="3ftSquatterArms6" type="CSGBox3D" parent="3ftSquatterArms"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.910583, -0.479893, -1.33952)
+size = Vector3(0.1, 0.1, 0.91)
+
+[node name="3ftSquatterArms7" type="CSGBox3D" parent="3ftSquatterArms"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.08055, -0.479893, -1.33959)
+size = Vector3(0.1, 0.1, 0.91)
+
+[node name="3ftSquatterArms8" type="CSGBox3D" parent="3ftSquatterArms"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.09827, -0.479893, -1.33952)
+size = Vector3(0.1, 0.1, 0.91)
