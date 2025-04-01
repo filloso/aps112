@@ -254,30 +254,37 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 3.8072
 
 [node name="RearDelt" type="CSGBox3D" parent="machines/middle"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.06366, 1.10438, 0.849597)
+use_collision = true
 size = Vector3(0.889, 1.85, 1.702)
 
 [node name="MidRow" type="CSGBox3D" parent="machines/middle"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.49106, 0.811894, 0.881182)
+use_collision = true
 size = Vector3(0.965, 1.37, 1.575)
 
 [node name="PecFly" type="CSGBox3D" parent="machines/middle"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.08547, 0.896909, -1.28356)
+use_collision = true
 size = Vector3(0.94, 1.52, 1.524)
 
 [node name="Pullover" type="CSGBox3D" parent="machines/middle"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.52535, 1.0078, -1.3115)
+use_collision = true
 size = Vector3(1.168, 1.7, 1.448)
 
 [node name="Abdominal" type="CSGBox3D" parent="machines/middle"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.2755, 0.81286, 1.21326)
+use_collision = true
 size = Vector3(1.473, 1.37, 0.889)
 
 [node name="Abdominal2" type="CSGBox3D" parent="machines/middle"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.2755, 0.81286, -0.213029)
+use_collision = true
 size = Vector3(1.473, 1.37, 0.889)
 
 [node name="RotaryTorso" type="CSGBox3D" parent="machines/middle"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.4488, 0.869513, -1.53357)
+use_collision = true
 size = Vector3(1.118, 1.448, 0.914)
 
 [node name="bottom" type="Node3D" parent="machines"]
