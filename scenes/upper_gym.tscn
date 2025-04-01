@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://yngltng6lfg4"]
+[gd_scene load_steps=14 format=3 uid="uid://yngltng6lfg4"]
 
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_hav21"]
 [ext_resource type="PackedScene" uid="uid://dcg38qlvi56h1" path="res://scenes/weightRoomTeleporter.tscn" id="2_5ur10"]
@@ -19,6 +19,9 @@ background_mode = 2
 sky = SubResource("Sky_k87fw")
 tonemap_mode = 2
 glow_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tdipy"]
+albedo_texture = ExtResource("4_tdipy")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8mpic"]
 albedo_texture = ExtResource("4_tdipy")
@@ -42,11 +45,11 @@ shadow_enabled = true
 environment = SubResource("Environment_5rvcq")
 
 [node name="ProtoController" parent="basics" instance=ExtResource("1_hav21")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -6.3941, 0.078113, -0.940936)
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -9.5798, 0.078113, -2.44351)
 
 [node name="ReflectionProbe" type="ReflectionProbe" parent="basics"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.78422, 3.18416, -0.012764)
-size = Vector3(28.7417, 8.8761, 13.286)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.7272, 1.72547, 0.171475)
+size = Vector3(30.6684, 10.7112, 14.8667)
 box_projection = true
 
 [node name="teleporters" type="Node3D" parent="."]
@@ -93,6 +96,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6858, 0, 0)
 radius = 5.66
 height = 0.25
 sides = 32
+material = SubResource("StandardMaterial3D_tdipy")
 
 [node name="Wall" type="CSGBox3D" parent="layout"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.8958, 1.76086, 0)
@@ -196,6 +200,23 @@ use_collision = true
 size = Vector3(1.04, 1.372, 1.22)
 
 [node name="elliptical" type="Node3D" parent="machines"]
+
+[node name="IsoTrack2" type="CSGBox3D" parent="machines/elliptical"]
+transform = Transform3D(0.987781, 0, 0.155848, 0, 1, 0, -0.155848, 0, 0.987781, 10.7906, 0.558568, 4.50388)
+use_collision = true
+size = Vector3(1.27, 0.813, 1.65)
+
+[node name="LegExtension" type="CSGBox3D" parent="machines/elliptical"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.416, 0.823515, 0)
+size = Vector3(1.397, 1.372, 0.914)
+
+[node name="LegExtension2" type="CSGBox3D" parent="machines/elliptical"]
+transform = Transform3D(0.906212, 0, 0.422824, 0, 1, 0, -0.422824, 0, 0.906212, 15.0316, 0.823515, -1.78586)
+size = Vector3(1.397, 1.372, 0.914)
+
+[node name="HipAbduction" type="CSGBox3D" parent="machines/elliptical"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.4609, 0.82821, -4.08)
+size = Vector3(0.889, 1.372, 1.473)
 
 [node name="middle" type="Node3D" parent="machines"]
 
@@ -360,6 +381,10 @@ use_collision = true
 size = Vector3(1.27, 0.813, 1.65)
 
 [node name="measuring" type="CSGBox3D" parent="machines"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.7306, 0.63214, -0.869546)
+transform = Transform3D(0.951691, 0, 0.307058, 0, 1, 0, -0.307058, 0, 0.951691, 14.9366, 0.63214, -0.839222)
+size = Vector3(0.59, 1, 0.59)
+
+[node name="measuring 2" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.3782, 0.629445, 0)
 visible = false
-size = Vector3(0.55, 1, 0.41)
+size = Vector3(2.7, 1, 1)
