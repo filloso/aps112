@@ -1,11 +1,11 @@
 [gd_scene load_steps=14 format=3 uid="uid://yngltng6lfg4"]
 
-[ext_resource type="PackedScene" path="res://addons/proto_controller/proto_controller.tscn" id="1_hav21"]
-[ext_resource type="PackedScene" path="res://scenes/weightRoomTeleporter.tscn" id="2_5ur10"]
-[ext_resource type="PackedScene" path="res://scenes/corridorTeleporter.tscn" id="3_1kr7m"]
-[ext_resource type="PackedScene" path="res://machines/upper_gym_machines/concept_2_rowing_machines.tscn" id="4_5ur10"]
+[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_hav21"]
+[ext_resource type="PackedScene" uid="uid://dcg38qlvi56h1" path="res://scenes/weightRoomTeleporter.tscn" id="2_5ur10"]
+[ext_resource type="PackedScene" uid="uid://bpw88aac1h5en" path="res://scenes/corridorTeleporter.tscn" id="3_1kr7m"]
+[ext_resource type="PackedScene" uid="uid://dxpk8fwu246af" path="res://machines/upper_gym_machines/concept_2_rowing_machines.tscn" id="4_5ur10"]
 [ext_resource type="Texture2D" uid="uid://b863jdfhcki72" path="res://addons/texture/laminate_floor_diff_4k.jpg" id="4_tdipy"]
-[ext_resource type="PackedScene" path="res://machines/upper_gym_machines/monkey_bars.tscn" id="5_1kr7m"]
+[ext_resource type="PackedScene" uid="uid://3666jfguamgv" path="res://machines/upper_gym_machines/monkey_bars.tscn" id="5_1kr7m"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_g5lea"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -211,12 +211,28 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.416, 0.823515, 0)
 size = Vector3(1.397, 1.372, 0.914)
 
 [node name="LegExtension2" type="CSGBox3D" parent="machines/elliptical"]
-transform = Transform3D(0.906212, 0, 0.422824, 0, 1, 0, -0.422824, 0, 0.906212, 15.0316, 0.823515, -1.78586)
+transform = Transform3D(0.906212, 0, 0.422824, 0, 1, 0, -0.422824, 0, 0.906212, 14.9899, 0.823515, -1.72239)
 size = Vector3(1.397, 1.372, 0.914)
 
 [node name="HipAbduction" type="CSGBox3D" parent="machines/elliptical"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.4609, 0.82821, -4.08)
+transform = Transform3D(0.756436, 0, -0.654068, 0, 1, 0, 0.654068, 0, 0.756436, 13.8482, 0.82821, -3.34453)
 size = Vector3(0.889, 1.372, 1.473)
+
+[node name="HipAbduction2" type="CSGBox3D" parent="machines/elliptical"]
+transform = Transform3D(0.924573, 0, -0.381006, 0, 1, 0, 0.381006, 0, 0.924573, 12.3634, 0.82821, -4.32904)
+size = Vector3(0.889, 1.372, 1.473)
+
+[node name="HorizontalCalf" type="CSGBox3D" parent="machines/elliptical"]
+transform = Transform3D(0.940038, 0, 0.341069, 0, 1, 0, -0.341069, 0, 0.940038, 12.4897, 0.826895, 4.05266)
+size = Vector3(0.88, 1.39, 1.57)
+
+[node name="SeatedLegCurl" type="CSGBox3D" parent="machines/elliptical"]
+transform = Transform3D(0.750642, 0, 0.660709, 0, 1, 0, -0.660709, 0, 0.750642, 13.9882, 0.814396, 3.05585)
+size = Vector3(0.889, 1.372, 1.321)
+
+[node name="ProneLegCurl" type="CSGBox3D" parent="machines/elliptical"]
+transform = Transform3D(0.412421, 0, 0.910993, 0, 1, 0, -0.910993, 0, 0.412421, 14.9849, 0.814396, 1.72426)
+size = Vector3(0.889, 1.372, 1.321)
 
 [node name="middle" type="Node3D" parent="machines"]
 
@@ -381,8 +397,9 @@ use_collision = true
 size = Vector3(1.27, 0.813, 1.65)
 
 [node name="measuring" type="CSGBox3D" parent="machines"]
-transform = Transform3D(0.951691, 0, 0.307058, 0, 1, 0, -0.307058, 0, 0.951691, 14.9366, 0.63214, -0.839222)
-size = Vector3(0.59, 1, 0.59)
+transform = Transform3D(0.578911, 0, 0.815391, 0, 1, 0, -0.815391, 0, 0.578911, 14.2416, 0.63214, 2.21312)
+visible = false
+size = Vector3(0.51, 1, 0.51)
 
 [node name="measuring 2" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.3782, 0.629445, 0)

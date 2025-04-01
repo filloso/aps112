@@ -1,0 +1,128 @@
+[gd_scene format=3 uid="uid://dxpk8fwu246af"]
+
+[node name="Concept2RowingMachines" type="Node3D"]
+
+[node name="Bench" type="CSGCombiner3D" parent="."]
+use_collision = true
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Bench"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.19855, -0.0851884, 0.0194898)
+size = Vector3(0.0401074, 0.0352783, 0.61)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Bench"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.992821, -0.0847026, 0.0279247)
+size = Vector3(0.0453565, 0.02771, 0.61)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Bench"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.526328, 0.147172, 0.0151301)
+size = Vector3(1.38734, 0.1, 0.1)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Bench"]
+transform = Transform3D(0.913304, -0.407279, 0, 0.407279, 0.913304, 0, 0, 0, 1, 0.488869, 0.296837, 0.0133384)
+size = Vector3(0.743507, 0.1, 0.1)
+
+[node name="Circle" type="CSGCylinder3D" parent="Bench"]
+transform = Transform3D(0.56, 0, 0, 0, -2.44784e-08, -0.56, 0, 0.56, -2.44784e-08, 0.848521, 0.488742, 0.0110923)
+height = 0.41792
+sides = 15
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Bench"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.21682, 0.0444925, 0.0225061)
+size = Vector3(0.00326905, 0.260872, 0.0340039)
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="Bench"]
+transform = Transform3D(0.990241, 0.139363, 0, -0.139363, 0.990241, 0, 0, 0, 1, 1.04302, 0.136819, 0.0225061)
+size = Vector3(0.00326905, 0.445955, 0.0340039)
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="Bench"]
+transform = Transform3D(0.837414, -0.54657, 0, 0.54657, 0.837414, 0, 0, 0, 1, 0.850453, 0.112594, 0.0225061)
+size = Vector3(0.00326905, 0.445955, 0.0340039)
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="Bench"]
+transform = Transform3D(0.940792, 0.338984, 0, -0.338984, 0.940792, 0, 0, 0, 1, -1.14259, 0.0444925, 0.0225061)
+size = Vector3(0.00326905, 0.260872, 0.0340039)
+
+[node name="Seat" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.321697, 0.235338, 0.0220578)
+size = Vector3(0.196184, 0.0410919, 0.34748)
+
+[node name="Pedals" type="CSGCombiner3D" parent="."]
+use_collision = true
+
+[node name="Pedal1" type="CSGPolygon3D" parent="Pedals"]
+transform = Transform3D(-0.195676, -0.0413638, 2.95462e-08, -0.0413638, 0.195676, 6.24576e-09, -3.01992e-08, 0, -0.2, 0.236248, 0.168679, 0.0643527)
+polygon = PackedVector2Array(0.0473696, 0.0476962, 0.0055396, 0.561447, 0.393232, 0.346295, 1, 0)
+
+[node name="CSGPolygon3D2" type="CSGPolygon3D" parent="Pedals/Pedal1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.618233)
+operation = 2
+polygon = PackedVector2Array(0.0473696, 0.0476962, 0.0055396, 0.561447, 0.393232, 0.346295, 1, 0)
+
+[node name="Pedal2" type="CSGPolygon3D" parent="Pedals"]
+transform = Transform3D(-0.195676, -0.0413638, 2.95462e-08, -0.0413638, 0.195676, 6.24576e-09, -3.01992e-08, 0, -0.2, 0.236248, 0.168679, -0.157682)
+polygon = PackedVector2Array(0.0473696, 0.0476962, 0.0055396, 0.561447, 0.393232, 0.346295, 1, 0)
+
+[node name="CSGPolygon3D2" type="CSGPolygon3D" parent="Pedals/Pedal2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.618233)
+operation = 2
+polygon = PackedVector2Array(0.0473696, 0.0476962, 0.0055396, 0.561447, 0.393232, 0.346295, 1, 0)
+
+[node name="Rowing" type="CSGCombiner3D" parent="."]
+use_collision = true
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Rowing"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.551646, 0.441891, 0.0147388)
+size = Vector3(0.0656476, 0.178873, 0.114674)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Rowing"]
+transform = Transform3D(0.854268, -0.519832, 0, 0.519832, 0.854268, 0, 0, 0, 1, 0.473631, 0.623411, 0.00807664)
+size = Vector3(0.0176871, 0.207601, 0.0297672)
+
+[node name="Monitor" type="CSGBox3D" parent="Rowing"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.415746, 0.731292, 0.00256756)
+size = Vector3(0.0173612, 0.070226, 0.115561)
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="Rowing"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.384897, 0.296846, 0.00943407)
+radius = 0.025
+
+[node name="Handle1" type="CSGCombiner3D" parent="Rowing"]
+transform = Transform3D(0.929281, -0.369374, 0, 0.369374, 0.929281, 0, 0, 0, 1, 0.287055, -0.12384, -0.558816)
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="Rowing/Handle1"]
+transform = Transform3D(1, -7.10543e-15, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0.146576, 0.369085, 0.628114)
+radius = 0.015
+height = 0.084481
+sides = 10
+
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="Rowing/Handle1"]
+transform = Transform3D(0.600671, -0.799496, 2.98023e-08, 0, -5.96046e-08, -1, 0.799496, 0.600671, -2.62562e-08, 0.165117, 0.369085, 0.579941)
+radius = 0.015
+height = 0.0605883
+sides = 10
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="Rowing/Handle1"]
+transform = Transform3D(1, 0, -9.17577e-16, 0, 1, 0, -9.17577e-16, 0, 1, 0.144499, 0.369416, 0.595498)
+radius = 0.015
+
+[node name="CSGCylinder3D4" type="CSGCylinder3D" parent="Rowing/Handle1"]
+transform = Transform3D(1, 2.91038e-11, 5.96046e-08, 0, -0.000907541, 1, 0, -0.999999, -0.00090754, 0.143155, 0.369345, 0.504196)
+radius = 0.015
+height = 0.084481
+sides = 10
+
+[node name="CSGCylinder3D5" type="CSGCylinder3D" parent="Rowing/Handle1"]
+transform = Transform3D(0.600671, -0.799496, 5.96046e-08, -0.000725746, -0.000545174, 1, -0.799496, -0.600671, -0.0009076, 0.161712, 0.369389, 0.552798)
+radius = 0.015
+height = 0.0605883
+sides = 10
+
+[node name="CSGSphere3D2" type="CSGSphere3D" parent="Rowing/Handle1"]
+transform = Transform3D(1, 0, 1.74623e-10, 0, -1, -0.00090763, 9.17576e-16, 0.00090763, -1, 0.141094, 0.369044, 0.537241)
+radius = 0.015
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]
+transform = Transform3D(0.413724, 0.910402, 0, -0.910402, 0.413724, 0, 0, 0, 1, 0.452752, 0.343279, 0.00846311)
+use_collision = true
+radius = 0.002
+height = 0.343084
