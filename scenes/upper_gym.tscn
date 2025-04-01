@@ -1,11 +1,11 @@
 [gd_scene load_steps=14 format=3 uid="uid://yngltng6lfg4"]
 
-[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_hav21"]
-[ext_resource type="PackedScene" uid="uid://dcg38qlvi56h1" path="res://scenes/weightRoomTeleporter.tscn" id="2_5ur10"]
-[ext_resource type="PackedScene" uid="uid://bpw88aac1h5en" path="res://scenes/corridorTeleporter.tscn" id="3_1kr7m"]
-[ext_resource type="PackedScene" uid="uid://dxpk8fwu246af" path="res://machines/upper_gym_machines/concept_2_rowing_machines.tscn" id="4_5ur10"]
+[ext_resource type="PackedScene" path="res://addons/proto_controller/proto_controller.tscn" id="1_hav21"]
+[ext_resource type="PackedScene" path="res://scenes/weightRoomTeleporter.tscn" id="2_5ur10"]
+[ext_resource type="PackedScene" path="res://scenes/corridorTeleporter.tscn" id="3_1kr7m"]
+[ext_resource type="PackedScene" path="res://machines/upper_gym_machines/concept_2_rowing_machines.tscn" id="4_5ur10"]
 [ext_resource type="Texture2D" uid="uid://b863jdfhcki72" path="res://addons/texture/laminate_floor_diff_4k.jpg" id="4_tdipy"]
-[ext_resource type="PackedScene" uid="uid://3666jfguamgv" path="res://machines/upper_gym_machines/monkey_bars.tscn" id="5_1kr7m"]
+[ext_resource type="PackedScene" path="res://machines/upper_gym_machines/monkey_bars.tscn" id="5_1kr7m"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_g5lea"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)

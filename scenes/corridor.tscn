@@ -1,0 +1,72 @@
+[gd_scene load_steps=7 format=3 uid="uid://yt6jmr8xeg44"]
+
+[ext_resource type="PackedScene" path="res://addons/proto_controller/proto_controller.tscn" id="1_6ref0"]
+[ext_resource type="PackedScene" uid="uid://bbw3kcblfppag" path="res://scenes/upperGymTeleporter.tscn" id="2_n20i7"]
+[ext_resource type="PackedScene" path="res://scenes/weightRoomTeleporter.tscn" id="3_hqpe0"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_gtkt8"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_fdrhr"]
+sky_material = SubResource("ProceduralSkyMaterial_gtkt8")
+
+[sub_resource type="Environment" id="Environment_yh6tw"]
+background_mode = 2
+sky = SubResource("Sky_fdrhr")
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="corridor" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_yh6tw")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Walls" type="CSGCombiner3D" parent="."]
+use_collision = true
+
+[node name="Wall2" type="CSGBox3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.51264, -0.976037)
+size = Vector3(16.52, 2.57, 0.1)
+
+[node name="Wall3" type="CSGBox3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.30399, 1.52996, 0)
+size = Vector3(0.1, 2.57, 1.85)
+
+[node name="Wall4" type="CSGBox3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.254, 1.53749, 0)
+size = Vector3(0.1, 2.57, 1.85)
+
+[node name="Door" type="CSGBox3D" parent="Walls/Wall4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.010355, -0.379256, 0)
+operation = 2
+size = Vector3(0.25, 1.8, 1)
+
+[node name="Wall" type="CSGBox3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.51981, 0.934012)
+size = Vector3(16.52, 2.57, 0.1)
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
+use_collision = true
+
+[node name="CorridorFloor" type="CSGBox3D" parent="CSGCombiner3D"]
+size = Vector3(16.52, 0.5, 1.85)
+
+[node name="OutsideFloor" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.8101, -2.38419e-07, 0.14039)
+size = Vector3(5.12088, 0.5, 6.76167)
+
+[node name="ProtoController" parent="." instance=ExtResource("1_6ref0")]
+transform = Transform3D(-0.0823855, -0.0016162, -0.996599, -0.00476502, 0.999988, -0.00122778, 0.996589, 0.00464766, -0.0823922, -6.44542, 0, -0.0307596)
+
+[node name="Teleports" type="Node3D" parent="."]
+
+[node name="upperGymTeleporter" parent="Teleports" instance=ExtResource("2_n20i7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.7473, 0.919681, -1.72147)
+
+[node name="weightRoomTeleporter" parent="Teleports" instance=ExtResource("3_hqpe0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.7704, 0.849545, 2.12414)

@@ -1,0 +1,93 @@
+[gd_scene load_steps=9 format=3 uid="uid://cpnmqqhhgp45b"]
+
+[ext_resource type="PackedScene" path="res://addons/proto_controller/proto_controller.tscn" id="1_k2agc"]
+[ext_resource type="PackedScene" uid="uid://bbw3kcblfppag" path="res://scenes/upperGymTeleporter.tscn" id="2_5ws8j"]
+[ext_resource type="PackedScene" path="res://scenes/corridorTeleporter.tscn" id="3_f50ur"]
+[ext_resource type="PackedScene" path="res://machines/upper_gym_machines/concept_2_rowing_machines.tscn" id="4_0078c"]
+[ext_resource type="PackedScene" path="res://machines/upper_gym_machines/monkey_bars.tscn" id="5_m111f"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_dkpty"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_vorom"]
+sky_material = SubResource("ProceduralSkyMaterial_dkpty")
+
+[sub_resource type="Environment" id="Environment_qmu17"]
+background_mode = 2
+sky = SubResource("Sky_vorom")
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="WeightRoom" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_qmu17")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866024, -0.433016, 0.250001, 0, 0.499998, 0.866026, -0.500003, 0.749999, -0.43301, 0.449674, -0.424337, -0.000720024)
+shadow_enabled = true
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
+use_collision = true
+
+[node name="MainFloor" type="CSGBox3D" parent="CSGCombiner3D"]
+size = Vector3(15.5, 0.5, 9.658)
+
+[node name="OutsideFloor" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.789, -0.0157685, 0.00149345)
+size = Vector3(5.33398, 0.5, 9.658)
+
+[node name="Walls" type="CSGCombiner3D" parent="."]
+use_collision = true
+
+[node name="Wall" type="CSGBox3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.87636, 2.17168, 0)
+size = Vector3(0.5, 4, 9.658)
+
+[node name="Wall5" type="CSGBox3D" parent="Walls/Wall"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.757065, -0.0177965)
+operation = 2
+size = Vector3(0.5, 1.93655, 8.29927)
+
+[node name="Wall2" type="CSGBox3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.90235, 2.172, -0.121072)
+size = Vector3(0.5, 4, 9.658)
+
+[node name="Door" type="CSGBox3D" parent="Walls/Wall2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0799999, -1.01138, 2.22411)
+operation = 2
+size = Vector3(0.8, 1.8, 1)
+
+[node name="Wall3" type="CSGBox3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00462341, 2.172, 4.88992)
+size = Vector3(15.5, 4, 0.5)
+
+[node name="Wall4" type="CSGBox3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0436473, 2.172, -5.11255)
+size = Vector3(15.5, 4, 0.5)
+
+[node name="ProtoController" parent="." instance=ExtResource("1_k2agc")]
+transform = Transform3D(0.0366611, 0, 0.999328, 0, 1, 0, -0.999328, 0, 0.0366611, 7.22407, 0.249998, 1.48552)
+
+[node name="Teleports" type="Node3D" parent="."]
+
+[node name="corridorTeleporter" parent="Teleports" instance=ExtResource("3_f50ur")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.1365, 0.776769, 2.47234)
+
+[node name="upperGymTeleporter" parent="Teleports" instance=ExtResource("2_5ws8j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.3247, 0.875538, -1.75929)
+
+[node name="CSGCombiner3D2" type="CSGCombiner3D" parent="."]
+
+[node name="Concept2RowingMachines" parent="CSGCombiner3D2" instance=ExtResource("4_0078c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.673589, 0.352828, 1.2534)
+
+[node name="Concept2RowingMachines2" parent="CSGCombiner3D2" instance=ExtResource("4_0078c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.673589, 0.352828, 0.282651)
+
+[node name="Concept2RowingMachines3" parent="CSGCombiner3D2" instance=ExtResource("4_0078c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.673589, 0.352828, -0.60793)
+
+[node name="monkey_bars" parent="CSGCombiner3D2" instance=ExtResource("5_m111f")]
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, -3.61004, 1.62, 0.183187)
