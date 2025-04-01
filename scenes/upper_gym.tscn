@@ -1,9 +1,10 @@
-[gd_scene load_steps=11 format=3 uid="uid://yngltng6lfg4"]
+[gd_scene load_steps=13 format=3 uid="uid://yngltng6lfg4"]
 
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_hav21"]
 [ext_resource type="PackedScene" uid="uid://dcg38qlvi56h1" path="res://scenes/weightRoomTeleporter.tscn" id="2_5ur10"]
 [ext_resource type="PackedScene" uid="uid://bpw88aac1h5en" path="res://scenes/corridorTeleporter.tscn" id="3_1kr7m"]
 [ext_resource type="PackedScene" uid="uid://dxpk8fwu246af" path="res://machines/upper_gym_machines/concept_2_rowing_machines.tscn" id="4_5ur10"]
+[ext_resource type="Texture2D" uid="uid://b863jdfhcki72" path="res://addons/texture/laminate_floor_diff_4k.jpg" id="4_tdipy"]
 [ext_resource type="PackedScene" uid="uid://3666jfguamgv" path="res://machines/upper_gym_machines/monkey_bars.tscn" id="5_1kr7m"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_g5lea"]
@@ -18,6 +19,9 @@ background_mode = 2
 sky = SubResource("Sky_k87fw")
 tonemap_mode = 2
 glow_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8mpic"]
+albedo_texture = ExtResource("4_tdipy")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hav21"]
 albedo_color = Color(0.219608, 0.419608, 1, 1)
@@ -105,6 +109,7 @@ size = Vector3(6.39687, 0.25, 11.31)
 
 [node name="Floor" type="CSGBox3D" parent="layout"]
 size = Vector3(21.44, 0.25, 11.31)
+material = SubResource("StandardMaterial3D_8mpic")
 
 [node name="machines" type="Node3D" parent="."]
 
