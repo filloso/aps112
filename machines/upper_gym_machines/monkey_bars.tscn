@@ -1,7 +1,106 @@
-[gd_scene load_steps=2 format=3 uid="uid://3666jfguamgv"]
+[gd_scene load_steps=35 format=3 uid="uid://3666jfguamgv"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ppsdy"]
+albedo_color = Color(0.10748, 0.10748, 0.10748, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0qkyn"]
+albedo_color = Color(0.105882, 0.105882, 0.105882, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_28wat"]
+albedo_color = Color(0.105882, 0.105882, 0.105882, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sihy7"]
+albedo_color = Color(0.105882, 0.105882, 0.105882, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_boyq1"]
+albedo_color = Color(0.105882, 0.105882, 0.105882, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qkr3g"]
+albedo_color = Color(0.105882, 0.105882, 0.105882, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_en0e1"]
+albedo_color = Color(0.105882, 0.105882, 0.105882, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8ajoe"]
+albedo_color = Color(0.105882, 0.105882, 0.105882, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uk0tf"]
+albedo_color = Color(0.105882, 0.105882, 0.105882, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0bbej"]
+albedo_color = Color(0.105882, 0.105882, 0.105882, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_22in4"]
+albedo_color = Color(0.105882, 0.105882, 0.105882, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qjvin"]
+albedo_color = Color(0.105882, 0.105882, 0.105882, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_of3lk"]
+albedo_color = Color(0.105882, 0.105882, 0.105882, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n83kn"]
+albedo_color = Color(0.105882, 0.105882, 0.105882, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fq3ay"]
+albedo_color = Color(0.105882, 0.105882, 0.105882, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vwt6s"]
+albedo_color = Color(0.105882, 0.105882, 0.105882, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1r8v0"]
+albedo_color = Color(0.105882, 0.105882, 0.105882, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sruv8"]
+albedo_color = Color(0.105882, 0.105882, 0.105882, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7pve8"]
+albedo_color = Color(0.105882, 0.105882, 0.105882, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_anu5m"]
+albedo_color = Color(0.105882, 0.105882, 0.105882, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5b8ul"]
+albedo_color = Color(0.105882, 0.105882, 0.105882, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1ove1"]
+albedo_color = Color(0.105882, 0.105882, 0.105882, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2fs1t"]
+albedo_color = Color(0.105882, 0.105882, 0.105882, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ad0kt"]
+albedo_color = Color(0.105882, 0.105882, 0.105882, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vqnun"]
+albedo_color = Color(0.105882, 0.105882, 0.105882, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wndfd"]
+albedo_color = Color(0.105882, 0.105882, 0.105882, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t2rmd"]
+albedo_color = Color(0.105882, 0.105882, 0.105882, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3bai2"]
+albedo_color = Color(0.105882, 0.105882, 0.105882, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_vjhxx"]
 size = Vector3(4.2973, 2.72174, 1.81531)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_si8wr"]
+albedo_color = Color(0.105882, 0.105882, 0.105882, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l1cex"]
+albedo_color = Color(0.105882, 0.105882, 0.105882, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_au45i"]
+albedo_color = Color(0.105882, 0.105882, 0.105882, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hp20p"]
+albedo_color = Color(0.105882, 0.105882, 0.105882, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e6jss"]
+albedo_color = Color(0.105882, 0.105882, 0.105882, 1)
 
 [node name="monkey_bars" type="Node3D"]
 
@@ -10,6 +109,7 @@ visible = false
 size = Vector3(4.267, 2.74, 1.829)
 
 [node name="MonkeyBars" type="CSGCombiner3D" parent="."]
+use_collision = true
 
 [node name="6ft" type="CSGCombiner3D" parent="MonkeyBars"]
 
@@ -17,51 +117,61 @@ size = Vector3(4.267, 2.74, 1.829)
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0.243359, 1.31438, 0)
 radius = 0.04
 height = 1.829
+material = SubResource("StandardMaterial3D_ppsdy")
 
 [node name="MonkeyBar2" type="CSGCylinder3D" parent="MonkeyBars/6ft"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.05489, 1.31438, 0)
 radius = 0.04
 height = 1.829
+material = SubResource("StandardMaterial3D_0qkyn")
 
 [node name="MonkeyBar3" type="CSGCylinder3D" parent="MonkeyBars/6ft"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 2.08942, 1.31438, 0)
 radius = 0.04
 height = 1.829
+material = SubResource("StandardMaterial3D_28wat")
 
 [node name="MonkeyBar4" type="CSGCylinder3D" parent="MonkeyBars/6ft"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 1.48796, 1.31438, 0)
 radius = 0.04
 height = 1.829
+material = SubResource("StandardMaterial3D_sihy7")
 
 [node name="MonkeyBar5" type="CSGCylinder3D" parent="MonkeyBars/6ft"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0.872185, 1.31438, 0)
 radius = 0.04
 height = 1.829
+material = SubResource("StandardMaterial3D_boyq1")
 
 [node name="MonkeyBar6" type="CSGCylinder3D" parent="MonkeyBars/6ft"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.332795, 1.31438, 0)
 radius = 0.04
 height = 1.829
+material = SubResource("StandardMaterial3D_qkr3g")
 
 [node name="MonkeyBar7" type="CSGCylinder3D" parent="MonkeyBars/6ft"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.9438, 1.31438, 0)
 radius = 0.04
 height = 1.829
+material = SubResource("StandardMaterial3D_en0e1")
 
 [node name="MonkeyBar8" type="CSGCylinder3D" parent="MonkeyBars/6ft"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -1.5233, 1.31438, 0)
 radius = 0.04
 height = 1.829
+material = SubResource("StandardMaterial3D_8ajoe")
 
 [node name="MonkeyBar9" type="CSGCylinder3D" parent="MonkeyBars/6ft"]
 transform = Transform3D(-4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, -0.0271085, 0.861756, 0.855308)
 radius = 0.04
 height = 1.829
+material = SubResource("StandardMaterial3D_uk0tf")
 
 [node name="MonkeyBar10" type="CSGCylinder3D" parent="MonkeyBars/6ft"]
 transform = Transform3D(-4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, -0.0271085, 0.861756, -0.840287)
 radius = 0.04
 height = 1.829
+material = SubResource("StandardMaterial3D_0bbej")
 
 [node name="4ft" type="CSGCombiner3D" parent="MonkeyBars"]
 
@@ -69,85 +179,106 @@ height = 1.829
 transform = Transform3D(-4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, 1.51536, 0.862434, -0.851467)
 radius = 0.04
 height = 1.21
+material = SubResource("StandardMaterial3D_22in4")
 
 [node name="4ftMonkeyBar2" type="CSGCylinder3D" parent="MonkeyBars/4ft"]
 transform = Transform3D(-4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, -1.47256, 0.862434, -0.851467)
 radius = 0.04
 height = 1.21
+material = SubResource("StandardMaterial3D_qjvin")
 
 [node name="4ftMonkeyBar3" type="CSGCylinder3D" parent="MonkeyBars/4ft"]
 transform = Transform3D(-4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, -1.47256, 0.862434, 0.831525)
 radius = 0.04
 height = 1.21
+material = SubResource("StandardMaterial3D_of3lk")
 
 [node name="4ftMonkeyBar4" type="CSGCylinder3D" parent="MonkeyBars/4ft"]
 transform = Transform3D(-4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, 1.51664, 0.862434, 0.831525)
 radius = 0.04
 height = 1.21
+material = SubResource("StandardMaterial3D_n83kn")
 
 [node name="9ftUpright" type="CSGCombiner3D" parent="."]
+use_collision = true
 
 [node name="9fUpright1" type="CSGBox3D" parent="9ftUpright"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.09254, 0, 0.862396)
 size = Vector3(0.1, 2.74, 0.1)
+material = SubResource("StandardMaterial3D_fq3ay")
 
 [node name="9fUpright2" type="CSGBox3D" parent="9ftUpright"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.08286, 0, 0.8464)
 size = Vector3(0.1, 2.74, 0.1)
+material = SubResource("StandardMaterial3D_vwt6s")
 
 [node name="9fUpright3" type="CSGBox3D" parent="9ftUpright"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.08286, 0, -0.840426)
 size = Vector3(0.1, 2.74, 0.1)
+material = SubResource("StandardMaterial3D_1r8v0")
 
 [node name="9fUpright4" type="CSGBox3D" parent="9ftUpright"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.09543, -5.96046e-08, -0.840898)
 size = Vector3(0.1, 2.74, 0.1)
+material = SubResource("StandardMaterial3D_sruv8")
 
 [node name="9fUpright5" type="CSGBox3D" parent="9ftUpright"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.876153, -5.96046e-08, -0.840898)
 size = Vector3(0.1, 2.74, 0.1)
+material = SubResource("StandardMaterial3D_7pve8")
 
 [node name="9fUpright7" type="CSGBox3D" parent="9ftUpright"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.912262, -5.96046e-08, 0.843283)
 size = Vector3(0.1, 2.74, 0.1)
+material = SubResource("StandardMaterial3D_anu5m")
 
 [node name="9fUpright10" type="CSGBox3D" parent="9ftUpright"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.912262, -5.96046e-08, -0.839186)
 size = Vector3(0.1, 2.74, 0.1)
+material = SubResource("StandardMaterial3D_5b8ul")
 
 [node name="9fUpright8" type="CSGBox3D" parent="9ftUpright"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.882273, -5.96046e-08, 0.873139)
 size = Vector3(0.1, 2.74, 0.1)
+material = SubResource("StandardMaterial3D_1ove1")
 
 [node name="6ftCrossbar" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.411138, 0)
+use_collision = true
 
 [node name="6ftCrossbar1" type="CSGBox3D" parent="6ftCrossbar"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.898892, -0.843369)
 size = Vector3(1.82, 0.1, 0.1)
+material = SubResource("StandardMaterial3D_2fs1t")
 
 [node name="6ftCrossbar2" type="CSGBox3D" parent="6ftCrossbar"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.898892, 0.84735)
 size = Vector3(1.82, 0.1, 0.1)
+material = SubResource("StandardMaterial3D_ad0kt")
 
 [node name="4ftCrossbar" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.417909, 0)
+use_collision = true
 
 [node name="4ftCrossbar1" type="CSGBox3D" parent="4ftCrossbar"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.45537, 0.895962, 0.843939)
 size = Vector3(1.21, 0.1, 0.1)
+material = SubResource("StandardMaterial3D_vqnun")
 
 [node name="4ftCrossbar2" type="CSGBox3D" parent="4ftCrossbar"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.45537, 0.895962, -0.844723)
 size = Vector3(1.21, 0.1, 0.1)
+material = SubResource("StandardMaterial3D_wndfd")
 
 [node name="4ftCrossbar3" type="CSGBox3D" parent="4ftCrossbar"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.43319, 0.895962, -0.844723)
 size = Vector3(1.21, 0.1, 0.1)
+material = SubResource("StandardMaterial3D_t2rmd")
 
 [node name="4ftCrossbar4" type="CSGBox3D" parent="4ftCrossbar"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.43319, 0.895962, 0.867078)
 size = Vector3(1.21, 0.1, 0.1)
+material = SubResource("StandardMaterial3D_3bai2")
 
 [node name="Area3D" type="Area3D" parent="."]
 
@@ -161,31 +292,39 @@ use_collision = true
 [node name="3ftSquatterArms" type="CSGBox3D" parent="3ftSquatterArms"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.887902, -0.479893, 1.3726)
 size = Vector3(0.1, 0.1, 0.91)
+material = SubResource("StandardMaterial3D_si8wr")
 
 [node name="3ftSquatterArms3" type="CSGBox3D" parent="3ftSquatterArms"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.910583, -0.479893, 1.3726)
 size = Vector3(0.1, 0.1, 0.91)
+material = SubResource("StandardMaterial3D_l1cex")
 
 [node name="3ftSquatterArms4" type="CSGBox3D" parent="3ftSquatterArms"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.08055, -0.479893, 1.37252)
 size = Vector3(0.1, 0.1, 0.91)
+material = SubResource("StandardMaterial3D_au45i")
 
 [node name="3ftSquatterArms2" type="CSGBox3D" parent="3ftSquatterArms"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.09827, -0.479893, 1.3726)
 size = Vector3(0.1, 0.1, 0.91)
+material = SubResource("StandardMaterial3D_hp20p")
 
 [node name="3ftSquatterArms5" type="CSGBox3D" parent="3ftSquatterArms"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.887902, -0.479893, -1.33952)
 size = Vector3(0.1, 0.1, 0.91)
+material = SubResource("StandardMaterial3D_e6jss")
 
 [node name="3ftSquatterArms6" type="CSGBox3D" parent="3ftSquatterArms"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.910583, -0.479893, -1.33952)
 size = Vector3(0.1, 0.1, 0.91)
+material = SubResource("StandardMaterial3D_e6jss")
 
 [node name="3ftSquatterArms7" type="CSGBox3D" parent="3ftSquatterArms"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.08055, -0.479893, -1.33959)
 size = Vector3(0.1, 0.1, 0.91)
+material = SubResource("StandardMaterial3D_e6jss")
 
 [node name="3ftSquatterArms8" type="CSGBox3D" parent="3ftSquatterArms"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.09827, -0.479893, -1.33952)
 size = Vector3(0.1, 0.1, 0.91)
+material = SubResource("StandardMaterial3D_e6jss")

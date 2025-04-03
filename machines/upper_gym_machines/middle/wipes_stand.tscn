@@ -1,0 +1,36 @@
+[gd_scene load_steps=7 format=3 uid="uid://dmjmi0d2jebom"]
+
+[ext_resource type="Texture2D" uid="uid://c1kesp4ksi2fe" path="res://addons/texture/silver_albedo.png" id="1_d5ty7"]
+[ext_resource type="Texture2D" uid="uid://bpnkcnuqn071w" path="res://addons/texture/silver_metallic.png" id="2_qi3ga"]
+[ext_resource type="Texture2D" uid="uid://bo0rvt7iuhwcf" path="res://addons/texture/silver_roughness.png" id="3_fgfr0"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_pdoyb"]
+load_path = "res://.godot/imported/silver_normal-ogl.png-04e8a29a5f3ef3f519ce6dbae198e65f.ctex"
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p23t8"]
+albedo_color = Color(0.629675, 0.629675, 0.629674, 1)
+albedo_texture = ExtResource("1_d5ty7")
+metallic = 1.0
+metallic_specular = 0.44
+metallic_texture = ExtResource("2_qi3ga")
+roughness_texture = ExtResource("3_fgfr0")
+normal_enabled = true
+normal_texture = SubResource("CompressedTexture2D_pdoyb")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d5ty7"]
+
+[node name="WipesStand" type="Node3D"]
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
+use_collision = true
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="CSGCombiner3D"]
+radius = 0.155
+height = 0.89
+sides = 24
+material = SubResource("StandardMaterial3D_p23t8")
+
+[node name="Wipes" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00161476, 0.458302, 0.00338745)
+size = Vector3(0.01, 0.1, 0.0984497)
+material = SubResource("StandardMaterial3D_d5ty7")
