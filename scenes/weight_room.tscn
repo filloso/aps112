@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [gd_scene load_steps=9 format=3 uid="uid://cpnmqqhhgp45b"]
 
 [ext_resource type="PackedScene" path="res://addons/proto_controller/proto_controller.tscn" id="1_k2agc"]
@@ -5,6 +6,15 @@
 [ext_resource type="PackedScene" path="res://scenes/corridorTeleporter.tscn" id="3_f50ur"]
 [ext_resource type="PackedScene" path="res://machines/upper_gym_machines/concept_2_rowing_machines.tscn" id="4_0078c"]
 [ext_resource type="PackedScene" path="res://machines/upper_gym_machines/monkey_bars.tscn" id="5_m111f"]
+=======
+[gd_scene load_steps=9 format=3 uid="uid://dv6fn7t6ty416"]
+
+[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_k2agc"]
+[ext_resource type="PackedScene" uid="uid://dveunjwnwphm5" path="res://scenes/upperGymTeleporter.tscn" id="2_5ws8j"]
+[ext_resource type="PackedScene" uid="uid://bpw88aac1h5en" path="res://scenes/corridorTeleporter.tscn" id="3_f50ur"]
+[ext_resource type="PackedScene" uid="uid://dxpk8fwu246af" path="res://machines/upper_gym_machines/concept_2_rowing_machines.tscn" id="4_0078c"]
+[ext_resource type="PackedScene" uid="uid://3666jfguamgv" path="res://machines/upper_gym_machines/monkey_bars.tscn" id="5_m111f"]
+>>>>>>> parent of 5b78027 (3D models)
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_dkpty"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -80,6 +90,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.3247, 0.875538, -1.75929)
 
 [node name="CSGCombiner3D2" type="CSGCombiner3D" parent="."]
 
+<<<<<<< HEAD
 [node name="Concept2RowingMachines" parent="CSGCombiner3D2" instance=ExtResource("4_0078c")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.673589, 0.352828, 1.2534)
 
@@ -90,4 +101,16 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.673589, 0.352828, 0.282651
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.673589, 0.352828, -0.60793)
 
 [node name="monkey_bars" parent="CSGCombiner3D2" instance=ExtResource("5_m111f")]
+=======
+[node name="Concept2RowingMachines" parent="." instance=ExtResource("4_0078c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.673589, 0.352828, 1.2534)
+
+[node name="Concept2RowingMachines2" parent="." instance=ExtResource("4_0078c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.673589, 0.352828, 0.282651)
+
+[node name="Concept2RowingMachines3" parent="." instance=ExtResource("4_0078c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.673589, 0.352828, -0.60793)
+
+[node name="monkey_bars" parent="." instance=ExtResource("5_m111f")]
+>>>>>>> parent of 5b78027 (3D models)
 transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, -3.61004, 1.62, 0.183187)

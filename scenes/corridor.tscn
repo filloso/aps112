@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 [gd_scene load_steps=7 format=3 uid="uid://yt6jmr8xeg44"]
 
 [ext_resource type="PackedScene" path="res://addons/proto_controller/proto_controller.tscn" id="1_6ref0"]
 [ext_resource type="PackedScene" uid="uid://bbw3kcblfppag" path="res://scenes/upperGymTeleporter.tscn" id="2_n20i7"]
 [ext_resource type="PackedScene" path="res://scenes/weightRoomTeleporter.tscn" id="3_hqpe0"]
+=======
+[gd_scene load_steps=7 format=3 uid="uid://c80k3yx50bqqt"]
+
+[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_6ref0"]
+[ext_resource type="PackedScene" uid="uid://dveunjwnwphm5" path="res://scenes/upperGymTeleporter.tscn" id="2_n20i7"]
+[ext_resource type="PackedScene" uid="uid://dcg38qlvi56h1" path="res://scenes/weightRoomTeleporter.tscn" id="3_hqpe0"]
+>>>>>>> parent of 5b78027 (3D models)
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_gtkt8"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)

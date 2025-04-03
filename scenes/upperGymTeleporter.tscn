@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 [gd_scene load_steps=4 format=3 uid="uid://bbw3kcblfppag"]
 
 [ext_resource type="Script" path="res://scripts/upper_gym_teleporter.gd" id="1_ft6ta"]
+=======
+[gd_scene load_steps=4 format=3 uid="uid://dveunjwnwphm5"]
+
+[ext_resource type="Script" uid="uid://cjwgokktwet05" path="res://scripts/upper_gym_teleporter.gd" id="1_ft6ta"]
+>>>>>>> parent of 5b78027 (3D models)
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_gl76g"]
 
