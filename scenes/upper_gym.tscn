@@ -1,11 +1,11 @@
 [gd_scene load_steps=14 format=3 uid="uid://yngltng6lfg4"]
 
-[ext_resource type="PackedScene" path="res://addons/proto_controller/proto_controller.tscn" id="1_hav21"]
-[ext_resource type="PackedScene" path="res://scenes/weightRoomTeleporter.tscn" id="2_5ur10"]
-[ext_resource type="PackedScene" path="res://scenes/corridorTeleporter.tscn" id="3_1kr7m"]
-[ext_resource type="PackedScene" path="res://machines/upper_gym_machines/concept_2_rowing_machines.tscn" id="4_5ur10"]
+[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_hav21"]
+[ext_resource type="PackedScene" uid="uid://dcg38qlvi56h1" path="res://scenes/weightRoomTeleporter.tscn" id="2_5ur10"]
+[ext_resource type="PackedScene" uid="uid://bpw88aac1h5en" path="res://scenes/corridorTeleporter.tscn" id="3_1kr7m"]
+[ext_resource type="PackedScene" uid="uid://dxpk8fwu246af" path="res://machines/upper_gym_machines/top/concept_2_rowing_machines.tscn" id="4_5ur10"]
 [ext_resource type="Texture2D" uid="uid://b863jdfhcki72" path="res://addons/texture/laminate_floor_diff_4k.jpg" id="4_tdipy"]
-[ext_resource type="PackedScene" path="res://machines/upper_gym_machines/monkey_bars.tscn" id="5_1kr7m"]
+[ext_resource type="PackedScene" uid="uid://3666jfguamgv" path="res://machines/upper_gym_machines/middle/monkey_bars.tscn" id="5_1kr7m"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_g5lea"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -92,7 +92,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.262333, -5.56761)
 size = Vector3(21.44, 0.25, 0.155137)
 
 [node name="Circle" type="CSGCylinder3D" parent="layout"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6858, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.686, 0.014, 0)
 radius = 5.66
 height = 0.25
 sides = 32
@@ -112,6 +112,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.5618, 0, 0)
 size = Vector3(6.39687, 0.25, 11.31)
 
 [node name="Floor" type="CSGBox3D" parent="layout"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0140853, 0)
 size = Vector3(21.44, 0.25, 11.31)
 material = SubResource("StandardMaterial3D_8mpic")
 
