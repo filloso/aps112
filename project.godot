@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="aps112"
-run/main_scene="uid://dv6fn7t6ty416"
+run/main_scene="uid://yngltng6lfg4"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 

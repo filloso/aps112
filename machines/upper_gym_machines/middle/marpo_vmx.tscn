@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://bkoal4hibkdvb"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cpviy"]
+size = Vector3(2.12451, 2.45058, 1.03073)
+
+[node name="marpo_vmx" type="Node3D"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+use_collision = true
+size = Vector3(2.08, 2.44, 1.01)
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0153809, 0.00530195, -0.0134735)
+shape = SubResource("BoxShape3D_cpviy")
