@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://yngltng6lfg4"]
+[gd_scene load_steps=28 format=3 uid="uid://yngltng6lfg4"]
 
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_hav21"]
 [ext_resource type="PackedScene" uid="uid://dcg38qlvi56h1" path="res://scenes/weightRoomTeleporter.tscn" id="2_5ur10"]
@@ -16,6 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://dx18w357m2bgn" path="res://addons/3d_models/Stationary bicycle.fbx" id="9_vcxfo"]
 [ext_resource type="PackedScene" uid="uid://c4fcadxh0no1d" path="res://addons/3d_models/versaclimber.blend" id="10_hvykf"]
 [ext_resource type="PackedScene" uid="uid://bqvqbnxtr0tsw" path="res://machines/upper_gym_machines/top/SkiErg.blend" id="11_wm6b1"]
+[ext_resource type="PackedScene" uid="uid://cc35ni1cryll3" path="res://addons/3d_models/marpovmx.blend" id="14_uj6ut"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_g5lea"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -310,6 +311,8 @@ size = Vector3(1.168, 2.13, 1.65)
 
 [node name="MarpoVMX" type="CSGBox3D" parent="machines/middle"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.88591, 1.34925, 0.278142)
+visible = false
+transparency = 0.8
 use_collision = true
 size = Vector3(1.01, 2.44, 2.08)
 
@@ -381,6 +384,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.4001, 0.654161, 2.90621)
 
 [node name="WipesStand2" parent="machines/middle" instance=ExtResource("9_ekauw")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.29242, 0.654161, -0.249037)
+
+[node name="marpovmx" parent="machines/middle" instance=ExtResource("14_uj6ut")]
+transform = Transform3D(-1.04907e-08, 0, 0.15, 0, 0.205, 0, -0.24, 0, -6.55671e-09, -4.37334, 0.473522, 0.228907)
 
 [node name="bottom" type="Node3D" parent="machines"]
 
