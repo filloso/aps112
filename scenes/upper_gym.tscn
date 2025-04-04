@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://yngltng6lfg4"]
+[gd_scene load_steps=27 format=3 uid="uid://yngltng6lfg4"]
 
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_hav21"]
 [ext_resource type="PackedScene" uid="uid://dcg38qlvi56h1" path="res://scenes/weightRoomTeleporter.tscn" id="2_5ur10"]
@@ -6,10 +6,16 @@
 [ext_resource type="PackedScene" uid="uid://dxpk8fwu246af" path="res://machines/upper_gym_machines/concept_2_rowing_machines.tscn" id="4_5ur10"]
 [ext_resource type="Texture2D" uid="uid://b863jdfhcki72" path="res://addons/texture/laminate_floor_diff_4k.jpg" id="4_tdipy"]
 [ext_resource type="PackedScene" uid="uid://3666jfguamgv" path="res://machines/upper_gym_machines/monkey_bars.tscn" id="5_1kr7m"]
+[ext_resource type="Texture2D" uid="uid://csh7y6hax862p" path="res://addons/texture/brick2/Bricks053_2K-JPG_Color.jpg" id="5_3tlxf"]
+[ext_resource type="Texture2D" uid="uid://c2lilx5ep2jn7" path="res://addons/texture/brick2/Bricks053_2K-JPG_AmbientOcclusion.jpg" id="6_hvykf"]
 [ext_resource type="PackedScene" uid="uid://fcliy64qmw78" path="res://addons/3d_models/curved treadmill..fbx" id="7_8mpic"]
+[ext_resource type="Texture2D" uid="uid://bycqg03ifj05i" path="res://addons/texture/brick2/Bricks053_2K-JPG_NormalGL.jpg" id="7_wm6b1"]
 [ext_resource type="PackedScene" uid="uid://pjdc4e16wnc0" path="res://addons/3d_models/Gym.FBX" id="8_bfao4"]
+[ext_resource type="Texture2D" uid="uid://dfffk8nknfyy5" path="res://addons/texture/brick2/Bricks053_2K-JPG_Roughness.jpg" id="8_uj6ut"]
 [ext_resource type="PackedScene" uid="uid://dmjmi0d2jebom" path="res://machines/upper_gym_machines/middle/wipes_stand.tscn" id="9_ekauw"]
 [ext_resource type="PackedScene" uid="uid://dx18w357m2bgn" path="res://addons/3d_models/Stationary bicycle.fbx" id="9_vcxfo"]
+[ext_resource type="PackedScene" uid="uid://c4fcadxh0no1d" path="res://addons/3d_models/versaclimber.blend" id="10_hvykf"]
+[ext_resource type="PackedScene" uid="uid://bqvqbnxtr0tsw" path="res://machines/upper_gym_machines/top/SkiErg.blend" id="11_wm6b1"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_g5lea"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -24,17 +30,33 @@ sky = SubResource("Sky_k87fw")
 tonemap_mode = 2
 glow_enabled = true
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0oun8"]
+albedo_texture = ExtResource("4_tdipy")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b6k7h"]
+albedo_texture = ExtResource("4_tdipy")
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tdipy"]
 albedo_texture = ExtResource("4_tdipy")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_es1v7"]
+albedo_texture = ExtResource("5_3tlxf")
+roughness_texture = ExtResource("8_uj6ut")
+normal_enabled = true
+normal_texture = ExtResource("7_wm6b1")
+ao_enabled = true
+ao_texture = ExtResource("6_hvykf")
+uv1_scale = Vector3(2.29, 1.225, 2.29)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8mpic"]
 albedo_texture = ExtResource("4_tdipy")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hav21"]
-albedo_color = Color(0.219608, 0.419608, 1, 1)
+albedo_color = Color(0.133333, 0.25098, 0.341176, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5ur10"]
 metallic = 1.0
+metallic_specular = 0.45
 roughness = 0.0
 
 [node name="Node3D" type="Node3D"]
@@ -53,6 +75,7 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -9.579
 
 [node name="ReflectionProbe" type="ReflectionProbe" parent="basics"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.7272, 1.72547, 0.171475)
+blend_distance = 0.0
 size = Vector3(30.6684, 10.7112, 14.8667)
 box_projection = true
 
@@ -75,6 +98,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6858, 0.261317, 0)
 radius = 5.66
 height = 0.25
 sides = 32
+material = SubResource("StandardMaterial3D_0oun8")
 
 [node name="Circle3" type="CSGCylinder3D" parent="layout/railings/Circle2"]
 operation = 2
@@ -90,10 +114,12 @@ size = Vector3(21.44, 0.25, 11.31)
 [node name="Floor3" type="CSGBox3D" parent="layout/railings"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.262333, 5.57743)
 size = Vector3(21.44, 0.25, 0.155137)
+material = SubResource("StandardMaterial3D_b6k7h")
 
 [node name="Floor4" type="CSGBox3D" parent="layout/railings"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.262333, -5.56761)
 size = Vector3(21.44, 0.25, 0.155137)
+material = SubResource("StandardMaterial3D_b6k7h")
 
 [node name="Circle" type="CSGCylinder3D" parent="layout"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.686, 0.014, 0)
@@ -103,8 +129,9 @@ sides = 32
 material = SubResource("StandardMaterial3D_tdipy")
 
 [node name="Wall" type="CSGBox3D" parent="layout"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.8958, 1.76086, 0)
-size = Vector3(0.35, 3.272, 11.31)
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -10.8958, 2.05586, -0.0140002)
+size = Vector3(0.35, 11.1, 3.9)
+material = SubResource("StandardMaterial3D_es1v7")
 
 [node name="Door" type="CSGBox3D" parent="layout"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.8958, 1.02543, -2.54989)
@@ -138,10 +165,14 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -6.815
 
 [node name="VersaClimber" type="CSGBox3D" parent="machines/top"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.36082, 1.31877, -4.75552)
+visible = false
+transparency = 0.75
 use_collision = true
 size = Vector3(1.16, 2.38, 1.09)
 
 [node name="SkiErg" type="CSGCombiner3D" parent="machines/top"]
+visible = false
+transparency = 0.8
 use_collision = true
 
 [node name="SkiErg" type="CSGBox3D" parent="machines/top/SkiErg"]
@@ -154,6 +185,8 @@ size = Vector3(0.61, 0.05, 1.32)
 
 [node name="SkiErg2" type="CSGCombiner3D" parent="machines/top"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1809, 0, 0)
+visible = false
+transparency = 0.8
 use_collision = true
 
 [node name="SkiErg" type="CSGBox3D" parent="machines/top/SkiErg2"]
@@ -203,6 +236,15 @@ size = Vector3(0.94, 1.5, 1.4)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.80906, 0.825403, -4.87701)
 use_collision = true
 size = Vector3(1.04, 1.372, 1.22)
+
+[node name="versaclimber" parent="machines/top" instance=ExtResource("10_hvykf")]
+transform = Transform3D(-0.135, 0, -2.41593e-08, 0, 0.145, 0, 2.03844e-08, 0, -0.16, -5.48158, 0.207749, -4.60472)
+
+[node name="SkiErg3" parent="machines/top" instance=ExtResource("11_wm6b1")]
+transform = Transform3D(-9.83506e-09, 0, -0.195, 0, 0.185, 0, 0.225, 0, -8.52372e-09, -4.0572, 0.334139, -5.35252)
+
+[node name="SkiErg4" parent="machines/top" instance=ExtResource("11_wm6b1")]
+transform = Transform3D(-9.83506e-09, 0, -0.195, 0, 0.185, 0, 0.225, 0, -8.52372e-09, -2.86715, 0.334139, -5.36808)
 
 [node name="elliptical" type="Node3D" parent="machines"]
 

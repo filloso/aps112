@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://ck0dpx8om3cxc"]
+
+[node name="VersaClimber" type="Node3D"]
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 0.989714, 0.143061, 0, -0.143061, 0.989714, -0.0124037, -0.0308741, -0.270113)
+size = Vector3(0.220215, 2.37878, 0.188086)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, -1.20386, -0.337372)
+radius = 0.05
+height = 0.532715
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transparency = 0.66
+size = Vector3(1.09, 2.388, 1.168)
