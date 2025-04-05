@@ -1,0 +1,74 @@
+[gd_scene load_steps=2 format=3 uid="uid://b0mg6ild5rpve"]
+
+[ext_resource type="PackedScene" uid="uid://c18schf54ipm2" path="res://addons/blender/weight_racks.blend" id="1_d1k2t"]
+
+[node name="weight_racks" instance=ExtResource("1_d1k2t")]
+
+[node name="Light" parent="." index="0"]
+visible = false
+
+[node name="dumbbell stack_6" parent="." index="3"]
+visible = false
+
+[node name="dumbbell stack_5" parent="." index="4"]
+visible = false
+
+[node name="dumbbell stack_3" parent="." index="5"]
+visible = false
+
+[node name="dumbbell stack_2" parent="." index="7"]
+visible = false
+
+[node name="dumbbell_weight_65" parent="." index="9"]
+visible = false
+
+[node name="dumbbell_weight_25" parent="." index="10"]
+visible = false
+
+[node name="dumbbell_weight_40" parent="." index="11"]
+visible = false
+
+[node name="dumbbell_weight_50" parent="." index="12"]
+visible = false
+
+[node name="dumbbell_weight_90" parent="." index="13"]
+visible = false
+
+[node name="dumbbell_weight_15" parent="." index="14"]
+visible = false
+
+[node name="dumbbell_weight_05" parent="." index="15"]
+visible = false
+
+[node name="dumbbell_weight_10" parent="." index="16"]
+visible = false
+
+[node name="dumbbell_weight_20" parent="." index="17"]
+visible = false
+
+[node name="dumbbell_weight_30" parent="." index="18"]
+visible = false
+
+[node name="dumbbell_weight_35" parent="." index="19"]
+visible = false
+
+[node name="dumbbell_weight_45" parent="." index="20"]
+visible = false
+
+[node name="dumbbell_weight_55" parent="." index="21"]
+visible = false
+
+[node name="dumbbell_weight_60" parent="." index="22"]
+visible = false
+
+[node name="dumbbell_weight_70" parent="." index="23"]
+visible = false
+
+[node name="dumbbell_weight_75" parent="." index="24"]
+visible = false
+
+[node name="dumbbell_weight_80" parent="." index="25"]
+visible = false
+
+[node name="dumbbell_weight_85" parent="." index="26"]
+visible = false

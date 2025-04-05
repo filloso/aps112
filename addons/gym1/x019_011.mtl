@@ -1,0 +1,79 @@
+# Max2Mtl Version 4.0 Mar 10th, 2001
+#
+# Multi/Sub weight_equipment (9) to come 
+#
+newmtl white_metal
+Ka  0.9 0.9 0.9
+Kd  0.9 0.9 0.9
+Ks  0.9 0.9 0.9
+d  1.0
+Ns  4.0
+illum 2
+#
+newmtl black_plastic
+Ka  0.1 0.1 0.1
+Kd  0.1 0.1 0.1
+Ks  0.9 0.9 0.9
+d  1.0
+Ns  6.5
+illum 2
+#
+newmtl chrome
+Ka  0.2 0.2 0.2
+Kd  0.2 0.2 0.2
+Ks  0.9 0.9 0.9
+d  1.0
+Ns  5.0
+illum 2
+#
+newmtl black_rubber
+Ka  0.1 0.1 0.1
+Kd  0.1 0.1 0.1
+Ks  0.9 0.9 0.9
+d  1.0
+Ns  2.5
+illum 2
+#
+newmtl seat
+Ka  0.4 0.4 0.4
+Kd  0.4 0.4 0.4
+Ks  0.9 0.9 0.9
+d  1.0
+Ns  4.0
+illum 2
+#
+newmtl ball
+Ka  0.2 0.2 0.4
+Kd  0.2 0.2 0.4
+Ks  0.9 0.9 0.9
+d  1.0
+Ns  5.0
+illum 2
+#
+newmtl black_weights
+Ka  0.1 0.1 0.1
+Kd  0.1 0.1 0.1
+Ks  0.9 0.9 0.9
+d  1.0
+Ns  5.0
+illum 2
+#
+newmtl weight
+Ka  0.4 0.4 0.4
+Kd  0.4 0.4 0.4
+Ks  0.9 0.9 0.9
+d  1.0
+Ns  5.0
+illum 2
+#
+newmtl weight_text
+Ka  0.6 0.6 0.6
+Kd  0.6 0.6 0.6
+Ks  0.9 0.9 0.9
+d  1.0
+Ns  5.0
+illum 2
+#
+# Multi/Sub weight_equipment done 
+#
+# EOF

@@ -6,8 +6,8 @@
 albedo_color = Color(0.91806, 0.575202, 0.222449, 1)
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_ucva2"]
-radius = 0.25
-height = 1.65
+radius = 0.23
+height = 1.8
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_iof21"]
 radius = 0.263673
@@ -27,7 +27,7 @@ cast_shadow = 0
 mesh = SubResource("CapsuleMesh_ucva2")
 
 [node name="Collider" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.835, 0)
+transform = Transform3D(0.886452, 0.00136791, -0.000935156, -0.00110189, 1.10148, -0.00124114, 0.000827641, 0.00136842, 0.999965, 0, 0.82402, 0)
 shape = SubResource("CapsuleShape3D_iof21")
 
 [node name="Head" type="Node3D" parent="."]

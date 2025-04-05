@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bmb0hcgnii7ay"]
+
+[ext_resource type="PackedScene" uid="uid://csjgrn5mgpho1" path="res://addons/gym2/008.FBX" id="1_x2nw7"]
+
+[node name="008" instance=ExtResource("1_x2nw7")]
+
+[node name="Box01" parent="." index="1"]
+visible = false

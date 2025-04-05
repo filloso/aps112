@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=3 uid="uid://bkfe3evd4gcfp"]
+
+[ext_resource type="PackedScene" uid="uid://bmh15e37q6slh" path="res://addons/gym1/013.FBX" id="1_5bdf6"]
+
+[node name="013" instance=ExtResource("1_5bdf6")]
+
+[node name="Box01" parent="." index="1"]
+visible = false
+
+[node name="Producer Perspective" parent="." index="3"]
+visible = false
+
+[node name="Producer Top" parent="." index="4"]
+visible = false
+
+[node name="Producer Bottom" parent="." index="5"]
+visible = false
+
+[node name="Producer Front" parent="." index="6"]
+visible = false
+
+[node name="Producer Back" parent="." index="7"]
+visible = false
+
+[node name="Producer Right" parent="." index="8"]
+visible = false
+
+[node name="Producer Left" parent="." index="9"]
+visible = false

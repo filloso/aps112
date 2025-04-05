@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://yngltng6lfg4"]
+[gd_scene load_steps=42 format=3 uid="uid://yngltng6lfg4"]
 
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_hav21"]
 [ext_resource type="PackedScene" uid="uid://dcg38qlvi56h1" path="res://scenes/weightRoomTeleporter.tscn" id="2_5ur10"]
@@ -10,13 +10,27 @@
 [ext_resource type="Texture2D" uid="uid://c2lilx5ep2jn7" path="res://addons/texture/brick2/Bricks053_2K-JPG_AmbientOcclusion.jpg" id="6_hvykf"]
 [ext_resource type="PackedScene" uid="uid://fcliy64qmw78" path="res://addons/3d_models/curved treadmill..fbx" id="7_8mpic"]
 [ext_resource type="Texture2D" uid="uid://bycqg03ifj05i" path="res://addons/texture/brick2/Bricks053_2K-JPG_NormalGL.jpg" id="7_wm6b1"]
-[ext_resource type="PackedScene" uid="uid://pjdc4e16wnc0" path="res://addons/3d_models/Gym.FBX" id="8_bfao4"]
 [ext_resource type="Texture2D" uid="uid://dfffk8nknfyy5" path="res://addons/texture/brick2/Bricks053_2K-JPG_Roughness.jpg" id="8_uj6ut"]
 [ext_resource type="PackedScene" uid="uid://dmjmi0d2jebom" path="res://machines/upper_gym_machines/middle/wipes_stand.tscn" id="9_ekauw"]
 [ext_resource type="PackedScene" uid="uid://dx18w357m2bgn" path="res://addons/3d_models/Stationary bicycle.fbx" id="9_vcxfo"]
-[ext_resource type="PackedScene" uid="uid://c4fcadxh0no1d" path="res://addons/3d_models/versaclimber.blend" id="10_hvykf"]
+[ext_resource type="PackedScene" uid="uid://c4fcadxh0no1d" path="res://addons/blender/versaclimber.blend" id="10_hvykf"]
 [ext_resource type="PackedScene" uid="uid://bqvqbnxtr0tsw" path="res://machines/upper_gym_machines/top/SkiErg.blend" id="11_wm6b1"]
-[ext_resource type="PackedScene" uid="uid://cc35ni1cryll3" path="res://addons/3d_models/marpovmx.blend" id="14_uj6ut"]
+[ext_resource type="PackedScene" uid="uid://dhiyhhoid826w" path="res://addons/gym1/010.tscn" id="12_0oun8"]
+[ext_resource type="PackedScene" uid="uid://d0dvdoestorlb" path="res://addons/gym1/011.tscn" id="13_b6k7h"]
+[ext_resource type="PackedScene" uid="uid://dyvek0mrw5n7u" path="res://addons/gym1/012.tscn" id="14_es1v7"]
+[ext_resource type="PackedScene" uid="uid://cc35ni1cryll3" path="res://addons/blender/marpovmx.blend" id="14_uj6ut"]
+[ext_resource type="PackedScene" uid="uid://bkfe3evd4gcfp" path="res://addons/gym1/013.tscn" id="15_xcinl"]
+[ext_resource type="PackedScene" uid="uid://bnity6lh3fpnf" path="res://addons/gym1/007.tscn" id="16_j4ujy"]
+[ext_resource type="PackedScene" uid="uid://ln38eqaasv14" path="res://addons/gym1/015.tscn" id="19_s3tam"]
+[ext_resource type="PackedScene" uid="uid://rokp6c3tqw77" path="res://addons/gym2/014.tscn" id="20_8eob1"]
+[ext_resource type="PackedScene" uid="uid://cfdkbk35srdek" path="res://addons/gym2/018.tscn" id="21_n2hus"]
+[ext_resource type="PackedScene" uid="uid://cvyiacd4fvxeu" path="res://addons/gym2/005.tscn" id="22_s3tam"]
+[ext_resource type="PackedScene" uid="uid://b0mg6ild5rpve" path="res://addons/blender/weight_racks.tscn" id="22_x2q35"]
+[ext_resource type="PackedScene" uid="uid://cwkqilxhl43tw" path="res://addons/gym2/007.tscn" id="23_hb0nr"]
+[ext_resource type="PackedScene" uid="uid://gwwu0v8nvvix" path="res://addons/gym1/018.tscn" id="24_5e4cc"]
+[ext_resource type="PackedScene" uid="uid://7vub6mgqm30r" path="res://addons/gym2/002.tscn" id="27_x2q35"]
+[ext_resource type="PackedScene" uid="uid://b7sqo8t7f5xm2" path="res://addons/gym2/003.tscn" id="29_5e4cc"]
+[ext_resource type="PackedScene" uid="uid://tjuloj6xn2wx" path="res://addons/gym1/002.tscn" id="29_qe0dr"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_g5lea"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -135,7 +149,7 @@ size = Vector3(0.35, 11.1, 3.9)
 material = SubResource("StandardMaterial3D_es1v7")
 
 [node name="Door" type="CSGBox3D" parent="layout"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.8958, 1.02543, -2.54989)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.8958, 1.02543, -3.62219)
 operation = 2
 size = Vector3(0.35, 1.8, 0.8)
 
@@ -151,6 +165,7 @@ material = SubResource("StandardMaterial3D_8mpic")
 [node name="machines" type="Node3D" parent="."]
 
 [node name="top" type="Node3D" parent="machines"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.841565, 0, 0)
 
 [node name="Concept2RowingMachines" parent="machines/top" instance=ExtResource("4_5ur10")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -9.9913, 0.227828, -4.22056)
@@ -200,11 +215,15 @@ size = Vector3(0.61, 0.05, 1.32)
 
 [node name="LatPulldown" type="CSGBox3D" parent="machines/top"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.20441, 1.26032, -4.53243)
+visible = false
+transparency = 0.7
 use_collision = true
 size = Vector3(0.762, 2.26, 1.854)
 
 [node name="CompoundRow" type="CSGBox3D" parent="machines/top"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.220853, 0.994497, -4.48602)
+visible = false
+transparency = 0.8
 use_collision = true
 size = Vector3(0.89, 1.7, 1.91)
 
@@ -225,11 +244,15 @@ size = Vector3(1.092, 1.372, 0.94)
 
 [node name="LowRow" type="CSGBox3D" parent="machines/top"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.60892, 0.976956, -4.84754)
+visible = false
+transparency = 0.8
 use_collision = true
 size = Vector3(1.22, 1.68, 1.27)
 
 [node name="LateralRaise" type="CSGBox3D" parent="machines/top"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.22214, 0.880318, -4.78359)
+visible = false
+transparency = 0.6
 use_collision = true
 size = Vector3(0.94, 1.5, 1.4)
 
@@ -247,12 +270,19 @@ transform = Transform3D(-9.83506e-09, 0, -0.195, 0, 0.185, 0, 0.225, 0, -8.52372
 [node name="SkiErg4" parent="machines/top" instance=ExtResource("11_wm6b1")]
 transform = Transform3D(-9.83506e-09, 0, -0.195, 0, 0.185, 0, 0.225, 0, -8.52372e-09, -2.86715, 0.334139, -5.36808)
 
-[node name="elliptical" type="Node3D" parent="machines"]
+[node name="010LatPulldown" parent="machines/top" instance=ExtResource("12_0oun8")]
+transform = Transform3D(0.86, 0, 0, 0, 1.13, 0, 0, 0, 1.16, -1.25454, 0.186377, -4.76968)
 
-[node name="IsoTrack2" type="CSGBox3D" parent="machines/elliptical"]
-transform = Transform3D(0.987781, 0, 0.155848, 0, 1, 0, -0.155848, 0, 0.987781, 10.7906, 0.558568, 4.50388)
-use_collision = true
-size = Vector3(1.27, 0.813, 1.65)
+[node name="011LatRaise" parent="machines/top" instance=ExtResource("13_b6k7h")]
+transform = Transform3D(1.16, 0, 0, 0, 0.855, 0, 0, 0, 1.185, 8.19846, 0.146284, -4.71302)
+
+[node name="007CompoundRow" parent="machines/top" instance=ExtResource("16_j4ujy")]
+transform = Transform3D(-0.0132177, 0, -1.16491, 0, 1.415, 0, 1.08492, 0, -0.0141922, 0.346559, 0, -4.5772)
+
+[node name="018LowRow" parent="machines/top" instance=ExtResource("24_5e4cc")]
+transform = Transform3D(1.62, 0, 0, 0, 0.81, 0, 0, 0, 0.81, 6.68273, 0.154394, -4.79514)
+
+[node name="elliptical" type="Node3D" parent="machines"]
 
 [node name="LegExtension" type="CSGBox3D" parent="machines/elliptical"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.416, 0.823515, 0)
@@ -272,15 +302,34 @@ size = Vector3(0.889, 1.372, 1.473)
 
 [node name="HorizontalCalf" type="CSGBox3D" parent="machines/elliptical"]
 transform = Transform3D(0.940038, 0, 0.341069, 0, 1, 0, -0.341069, 0, 0.940038, 12.4897, 0.826895, 4.05266)
+visible = false
+transparency = 0.8
 size = Vector3(0.88, 1.39, 1.57)
 
 [node name="SeatedLegCurl" type="CSGBox3D" parent="machines/elliptical"]
 transform = Transform3D(0.750642, 0, 0.660709, 0, 1, 0, -0.660709, 0, 0.750642, 13.9882, 0.814396, 3.05585)
+visible = false
+transparency = 0.8
 size = Vector3(0.889, 1.372, 1.321)
 
 [node name="ProneLegCurl" type="CSGBox3D" parent="machines/elliptical"]
 transform = Transform3D(0.412421, 0, 0.910993, 0, 1, 0, -0.910993, 0, 0.412421, 14.9849, 0.814396, 1.72426)
+visible = false
+transparency = 0.8
 size = Vector3(0.889, 1.372, 1.321)
+
+[node name="012LegCurl" parent="machines/elliptical" instance=ExtResource("14_es1v7")]
+transform = Transform3D(0.599715, 0, -0.367759, 0, 0.89, 0, 0.416223, 0, 0.529885, 15.0289, 0.139703, 1.70305)
+
+[node name="012LegCurl2" parent="machines/elliptical" instance=ExtResource("14_es1v7")]
+transform = Transform3D(0.307737, 0, -0.584887, 0, 0.89, 0, 0.661965, 0, 0.271905, 14.0387, 0.139703, 3.13688)
+
+[node name="013" parent="machines/elliptical" instance=ExtResource("15_xcinl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.9571, 1.11324, -0.139448)
+visible = false
+
+[node name="007HorizontalCalf" parent="machines/elliptical" instance=ExtResource("16_j4ujy")]
+transform = Transform3D(0.0493378, 0, -0.998782, 0, 1, 0, 0.998782, 0, 0.0493378, 12.5044, 0.155101, 4.15124)
 
 [node name="middle" type="Node3D" parent="machines"]
 
@@ -296,16 +345,22 @@ material = SubResource("StandardMaterial3D_5ur10")
 
 [node name="Bench" type="CSGBox3D" parent="machines/middle"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -8.77673, 0.591492, -0.784891)
+visible = false
+transparency = 0.8
 use_collision = true
 size = Vector3(0.66, 0.79, 1.27)
 
 [node name="Bench2" type="CSGBox3D" parent="machines/middle"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -8.77673, 0.587127, 1.58268)
+visible = false
+transparency = 0.8
 use_collision = true
 size = Vector3(0.66, 0.79, 1.27)
 
 [node name="Gravitron" type="CSGBox3D" parent="machines/middle"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -4.14964, 1.19321, -1.41343)
+visible = false
+transparency = 0.8
 use_collision = true
 size = Vector3(1.168, 2.13, 1.65)
 
@@ -328,11 +383,15 @@ size = Vector3(1.07, 1.37, 1.55)
 
 [node name="LowerBack" type="CSGBox3D" parent="machines/middle"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.05733, 0.809196, 0.92976)
+visible = false
+transparency = 0.8
 use_collision = true
 size = Vector3(0.97, 1.37, 1.42)
 
 [node name="VerticalChest" type="CSGBox3D" parent="machines/middle"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.553244, 1.04573, -1.25302)
+visible = false
+transparency = 0.8
 use_collision = true
 size = Vector3(0.99, 1.83, 1.45)
 
@@ -341,11 +400,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.582538, 0.860245, 0.913001
 use_collision = true
 size = Vector3(1.041, 1.47, 1.448)
 
-[node name="monkey_bars" parent="machines/middle" instance=ExtResource("5_1kr7m")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 3.80727, 1.495, -0.149691)
-
 [node name="RearDelt" type="CSGBox3D" parent="machines/middle"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.06366, 1.10438, 0.849597)
+visible = false
+transparency = 0.8
 use_collision = true
 size = Vector3(0.889, 1.85, 1.702)
 
@@ -379,6 +437,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.4488, 0.869513, -1.53357)
 use_collision = true
 size = Vector3(1.118, 1.448, 0.914)
 
+[node name="monkey_bars" parent="machines/middle" instance=ExtResource("5_1kr7m")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 3.80727, 1.495, -0.149691)
+
 [node name="WipesStand" parent="machines/middle" instance=ExtResource("9_ekauw")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.4001, 0.654161, 2.90621)
 
@@ -387,6 +448,30 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.29242, 0.654161, -0.249037)
 
 [node name="marpovmx" parent="machines/middle" instance=ExtResource("14_uj6ut")]
 transform = Transform3D(-1.04907e-08, 0, 0.15, 0, 0.205, 0, -0.24, 0, -6.55671e-09, -4.37334, 0.473522, 0.228907)
+
+[node name="015RearDeltAndPecFly" parent="machines/middle" instance=ExtResource("19_s3tam")]
+transform = Transform3D(1.105, 0, 0, 0, 1.05, 0, 0, 0, 1.12, 8.06444, 0.148502, 0.985155)
+
+[node name="014FlatBench" parent="machines/middle" instance=ExtResource("20_8eob1")]
+transform = Transform3D(8.07828e-08, 0, -1.12, 0, 1, 0, 1.07, 0, 8.45576e-08, -8.56628, 0.188274, -0.876217)
+
+[node name="014FlatBench2" parent="machines/middle" instance=ExtResource("20_8eob1")]
+transform = Transform3D(8.07828e-08, 0, -1.12, 0, 1, 0, 1.07, 0, 8.45576e-08, -8.56628, 0.188274, 1.5067)
+
+[node name="018Gravitron" parent="machines/middle" instance=ExtResource("21_n2hus")]
+transform = Transform3D(-4.45856e-08, 0, -1.765, 0, 1, 0, 1.02, 0, -7.71506e-08, -4.36563, 0.183783, -1.30529)
+
+[node name="weight_racks" parent="machines/middle" instance=ExtResource("22_x2q35")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9.47243, 0.161956, -0.474225)
+
+[node name="weight_racks2" parent="machines/middle" instance=ExtResource("22_x2q35")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9.47243, 0.161956, -2.51692)
+
+[node name="018VerticalChest" parent="machines/middle" instance=ExtResource("24_5e4cc")]
+transform = Transform3D(-1.355, 0, 1.47221e-07, 0, 0.995, 0, -2.04599e-07, 0, -0.975, -0.593109, 0, -1.32557)
+
+[node name="002LowerBack" parent="machines/middle" instance=ExtResource("29_qe0dr")]
+transform = Transform3D(-4.37114e-08, 0, -0.845, 0, 0.935, 0, 1, 0, -3.69361e-08, -2.35303, 0.159082, 1.16474)
 
 [node name="bottom" type="Node3D" parent="machines"]
 
@@ -406,46 +491,64 @@ size = Vector3(0.97, 1.65, 1.66)
 
 [node name="WoodwayTreadmill" type="CSGBox3D" parent="machines/bottom"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.73844, 0.968473, 4.54597)
+visible = false
+transparency = 0.8
 use_collision = true
 size = Vector3(1.22, 1.73, 1.93)
 
 [node name="WoodwayTreadmill2" type="CSGBox3D" parent="machines/bottom"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.00903, 0.968473, 4.54597)
+visible = false
+transparency = 0.8
 use_collision = true
 size = Vector3(1.22, 1.73, 1.93)
 
 [node name="WoodwayTreadmill3" type="CSGBox3D" parent="machines/bottom"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.26931, 0.968473, 4.54597)
+visible = false
+transparency = 0.8
 use_collision = true
 size = Vector3(1.22, 1.73, 1.93)
 
 [node name="NordicTrackTreadmill" type="CSGBox3D" parent="machines/bottom"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.657376, 0.897192, 4.50572)
+visible = false
+transparency = 0.8
 use_collision = true
 size = Vector3(0.94, 1.52, 1.956)
 
 [node name="NordicTrackTreadmill2" type="CSGBox3D" parent="machines/bottom"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.811579, 0.897192, 4.50572)
+visible = false
+transparency = 0.8
 use_collision = true
 size = Vector3(0.94, 1.52, 1.956)
 
 [node name="Elliptical" type="CSGBox3D" parent="machines/bottom"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.14958, 0.809086, 4.66719)
+visible = false
+transparency = 0.8
 use_collision = true
 size = Vector3(0.686, 1.346, 1.65)
 
 [node name="Elliptical2" type="CSGBox3D" parent="machines/bottom"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.35975, 0.809086, 4.66719)
+visible = false
+transparency = 0.8
 use_collision = true
 size = Vector3(0.686, 1.346, 1.65)
 
 [node name="Elliptical3" type="CSGBox3D" parent="machines/bottom"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.56855, 0.836035, 4.66719)
+visible = false
+transparency = 0.8
 use_collision = true
 size = Vector3(0.686, 1.346, 1.65)
 
 [node name="Elliptical4" type="CSGBox3D" parent="machines/bottom"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.77871, 0.832194, 4.66719)
+visible = false
+transparency = 0.8
 use_collision = true
 size = Vector3(0.686, 1.346, 1.65)
 
@@ -458,8 +561,17 @@ size = Vector3(1.55, 1.57, 0.97)
 
 [node name="IsoTrack" type="CSGBox3D" parent="machines/bottom"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.86454, 0.558568, 4.66344)
+visible = false
+transparency = 0.8
 use_collision = true
-size = Vector3(1.27, 0.813, 1.65)
+size = Vector3(0.82, 1.65, 1.27)
+
+[node name="IsoTrack2" type="CSGBox3D" parent="machines/bottom"]
+transform = Transform3D(0.987781, 0, 0.155848, 0, 1, 0, -0.155848, 0, 0.987781, 10.7906, 0.558568, 4.50388)
+visible = false
+transparency = 0.8
+use_collision = true
+size = Vector3(0.82, 1.65, 1.27)
 
 [node name="curved treadmill_" parent="machines/bottom" instance=ExtResource("7_8mpic")]
 transform = Transform3D(-3.12536e-08, 0, -0.85, 0, 0.865, 0, 0.715, 0, -3.71547e-08, -8.88381, 0.949081, 4.68924)
@@ -469,17 +581,44 @@ transform = Transform3D(-3.12536e-08, 0, -0.85, 0, 0.865, 0, 0.715, 0, -3.71547e
 
 [node name="SciFit Bike" parent="machines/bottom" instance=ExtResource("9_vcxfo")]
 transform = Transform3D(1.445, 0, 0, 0, 1.13, 0, 0, 0, 1.58, 7.14975, 0.183006, 4.71011)
-
-[node name="measuring" type="CSGBox3D" parent="machines"]
-transform = Transform3D(0.578911, 0, 0.815391, 0, 1, 0, -0.815391, 0, 0.578911, 14.2416, 0.63214, 2.21312)
 visible = false
-size = Vector3(0.51, 1, 0.51)
 
-[node name="measuring 2" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.3782, 0.629445, 0)
-visible = false
-size = Vector3(2.7, 1, 1)
+[node name="005IsoTrack" parent="machines/bottom" instance=ExtResource("22_s3tam")]
+transform = Transform3D(-0.955, 0, 1.44201e-07, 0, 1, 0, -1.44201e-07, 0, -0.955, 8.83684, 0.0979518, 4.73223)
 
-[node name="Gym" parent="." instance=ExtResource("8_bfao4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.40467, 0.139085, 0.79446)
+[node name="005IsoTrack2" parent="machines/bottom" instance=ExtResource("22_s3tam")]
+transform = Transform3D(-0.94581, 0, -0.132167, 0, 1, 0, 0.132167, 0, -0.94581, 10.8274, 0.0979518, 4.70066)
+
+[node name="007Treadmill" parent="machines/bottom" instance=ExtResource("23_hb0nr")]
+transform = Transform3D(-1.275, 0, -1.31366e-07, 0, 1.24, 0, 1.9252e-07, 0, -0.87, -5.66486, -0.0178728, 4.70198)
+
+[node name="007Treadmill2" parent="machines/bottom" instance=ExtResource("23_hb0nr")]
+transform = Transform3D(-1.275, 0, -1.31366e-07, 0, 1.24, 0, 1.9252e-07, 0, -0.87, -3.9415, -0.0178728, 4.70198)
+
+[node name="007Treadmill3" parent="machines/bottom" instance=ExtResource("23_hb0nr")]
+transform = Transform3D(-1.275, 0, -1.31366e-07, 0, 1.24, 0, 1.9252e-07, 0, -0.87, -2.1693, -0.0178728, 4.70198)
+
+[node name="007Treadmill4" parent="machines/bottom" instance=ExtResource("23_hb0nr")]
+transform = Transform3D(-1.045, 0, -1.41181e-07, 0, 1.03, 0, 1.57791e-07, 0, -0.935, -0.577412, -0.0178728, 4.67391)
+
+[node name="007Treadmill5" parent="machines/bottom" instance=ExtResource("23_hb0nr")]
+transform = Transform3D(-1.045, 0, -1.41181e-07, 0, 1.03, 0, 1.57791e-07, 0, -0.935, 0.896881, -0.0178728, 4.67391)
+
+[node name="002Elliptical" parent="machines/bottom" instance=ExtResource("27_x2q35")]
+transform = Transform3D(-0.905, 0, 1.14757e-07, 0, 0.75, 0, -1.36651e-07, 0, -0.76, 4.54222, 0.159547, 4.43365)
+
+[node name="002Elliptical2" parent="machines/bottom" instance=ExtResource("27_x2q35")]
+transform = Transform3D(-0.905, 0, 1.14757e-07, 0, 0.75, 0, -1.36651e-07, 0, -0.76, 5.78011, 0.159547, 4.43365)
+
+[node name="002Elliptical3" parent="machines/bottom" instance=ExtResource("27_x2q35")]
+transform = Transform3D(-0.905, 0, 1.14757e-07, 0, 0.75, 0, -1.36651e-07, 0, -0.76, 3.30812, 0.159547, 4.43365)
+
+[node name="002Elliptical4" parent="machines/bottom" instance=ExtResource("27_x2q35")]
+transform = Transform3D(-0.905, 0, 1.14757e-07, 0, 0.75, 0, -1.36651e-07, 0, -0.76, 2.12873, 0.159547, 4.43365)
+
+[node name="003SciFitBike" parent="machines/bottom" instance=ExtResource("29_5e4cc")]
+transform = Transform3D(-1.415, 0, -1.9252e-07, 0, 1, 0, 2.13659e-07, 0, -1.275, 7.1288, 0.237455, 4.29868)
+
+[node name="002" parent="." instance=ExtResource("29_qe0dr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.24637, 6.86762, 1.54447)
 visible = false
