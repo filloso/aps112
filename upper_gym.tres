@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://cqf0fl3lj3sm1"]
+
+[ext_resource type="Texture2D" uid="uid://b863jdfhcki72" path="res://addons/texture/laminate_floor_diff_4k.jpg" id="1_r8j35"]
+
+[resource]
+albedo_texture = ExtResource("1_r8j35")

@@ -1,6 +1,5 @@
-[gd_scene load_steps=44 format=3 uid="uid://yngltng6lfg4"]
+[gd_scene load_steps=43 format=3 uid="uid://yngltng6lfg4"]
 
-[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_hav21"]
 [ext_resource type="PackedScene" uid="uid://dcg38qlvi56h1" path="res://scenes/weightRoomTeleporter.tscn" id="2_5ur10"]
 [ext_resource type="PackedScene" uid="uid://bpw88aac1h5en" path="res://scenes/corridorTeleporter.tscn" id="3_1kr7m"]
 [ext_resource type="PackedScene" uid="uid://dxpk8fwu246af" path="res://machines/upper_gym_machines/concept_2_rowing_machines.tscn" id="4_5ur10"]
@@ -10,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://c2lilx5ep2jn7" path="res://addons/texture/brick2/Bricks053_2K-JPG_AmbientOcclusion.jpg" id="6_hvykf"]
 [ext_resource type="PackedScene" uid="uid://fcliy64qmw78" path="res://addons/3d_models/curved treadmill..fbx" id="7_8mpic"]
 [ext_resource type="Texture2D" uid="uid://bycqg03ifj05i" path="res://addons/texture/brick2/Bricks053_2K-JPG_NormalGL.jpg" id="7_wm6b1"]
+[ext_resource type="Material" uid="uid://cqf0fl3lj3sm1" path="res://upper_gym.tres" id="8_fu8et"]
 [ext_resource type="Texture2D" uid="uid://dfffk8nknfyy5" path="res://addons/texture/brick2/Bricks053_2K-JPG_Roughness.jpg" id="8_uj6ut"]
 [ext_resource type="PackedScene" uid="uid://dmjmi0d2jebom" path="res://machines/upper_gym_machines/middle/wipes_stand.tscn" id="9_ekauw"]
 [ext_resource type="PackedScene" uid="uid://dx18w357m2bgn" path="res://addons/3d_models/Stationary bicycle.fbx" id="9_vcxfo"]
@@ -65,9 +65,6 @@ ao_enabled = true
 ao_texture = ExtResource("6_hvykf")
 uv1_scale = Vector3(2.29, 1.225, 2.29)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8mpic"]
-albedo_texture = ExtResource("4_tdipy")
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hav21"]
 albedo_color = Color(0.133333, 0.25098, 0.341176, 1)
 
@@ -80,24 +77,19 @@ roughness = 0.0
 
 [node name="basics" type="Node3D" parent="."]
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="basics"]
-transform = Transform3D(-0.866024, -0.433016, 0.250001, 0, 0.499998, 0.866026, -0.500003, 0.749999, -0.43301, 0, 0, 0)
-shadow_enabled = true
-
 [node name="WorldEnvironment" type="WorldEnvironment" parent="basics"]
 environment = SubResource("Environment_5rvcq")
 
-[node name="ProtoController" parent="basics" instance=ExtResource("1_hav21")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -9.5798, 0.078113, -2.44351)
-
 [node name="ReflectionProbe" type="ReflectionProbe" parent="basics"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.7272, 1.72547, 0.171475)
+visible = false
 blend_distance = 0.0
 size = Vector3(30.6684, 10.7112, 14.8667)
 box_projection = true
 
 [node name="teleporters" type="Node3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -8.26676, 0, -2.65686)
+visible = false
 
 [node name="weightRoomTeleporter" parent="teleporters" instance=ExtResource("2_5ur10")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.26877, 1.03096, 6.41284)
@@ -122,6 +114,7 @@ operation = 2
 radius = 5.5
 height = 0.25
 sides = 32
+material = ExtResource("8_fu8et")
 
 [node name="Floor2" type="CSGBox3D" parent="layout/railings/Circle2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.6858, 0.00101686, 0)
@@ -147,22 +140,25 @@ material = SubResource("StandardMaterial3D_tdipy")
 
 [node name="Wall" type="CSGBox3D" parent="layout"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -10.8958, 2.05586, -0.0140002)
+visible = false
 size = Vector3(0.35, 11.1, 3.9)
 material = SubResource("StandardMaterial3D_es1v7")
 
 [node name="Door" type="CSGBox3D" parent="layout"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.8958, 1.02543, -3.62219)
+visible = false
 operation = 2
 size = Vector3(0.35, 1.8, 0.8)
 
 [node name="Floor2" type="CSGBox3D" parent="layout"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.5618, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.5454, 0.00861716, -0.0152583)
 size = Vector3(6.39687, 0.25, 11.31)
+material = ExtResource("8_fu8et")
 
 [node name="Floor" type="CSGBox3D" parent="layout"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0140853, 0)
 size = Vector3(21.44, 0.25, 11.31)
-material = SubResource("StandardMaterial3D_8mpic")
+material = ExtResource("8_fu8et")
 
 [node name="machines" type="Node3D" parent="."]
 
@@ -185,13 +181,11 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -6.815
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.36082, 1.31877, -4.75552)
 visible = false
 transparency = 0.75
-use_collision = true
 size = Vector3(1.16, 2.38, 1.09)
 
 [node name="SkiErg" type="CSGCombiner3D" parent="machines/top"]
 visible = false
 transparency = 0.8
-use_collision = true
 
 [node name="SkiErg" type="CSGBox3D" parent="machines/top/SkiErg"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.05711, 1.20644, -5.26341)
@@ -205,7 +199,6 @@ size = Vector3(0.61, 0.05, 1.32)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1809, 0, 0)
 visible = false
 transparency = 0.8
-use_collision = true
 
 [node name="SkiErg" type="CSGBox3D" parent="machines/top/SkiErg2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.05711, 1.20644, -5.26341)
@@ -219,56 +212,48 @@ size = Vector3(0.61, 0.05, 1.32)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.20441, 1.26032, -4.53243)
 visible = false
 transparency = 0.7
-use_collision = true
 size = Vector3(0.762, 2.26, 1.854)
 
 [node name="CompoundRow" type="CSGBox3D" parent="machines/top"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.220853, 0.994497, -4.48602)
 visible = false
 transparency = 0.8
-use_collision = true
 size = Vector3(0.89, 1.7, 1.91)
 
 [node name="VTriceps" type="CSGBox3D" parent="machines/top"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.77749, 0.848346, -4.86872)
 visible = false
 transparency = 0.8
-use_collision = true
 size = Vector3(1.04, 1.47, 1.23)
 
 [node name="BicepsCurl" type="CSGBox3D" parent="machines/top"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.42125, 0.862264, -4.96428)
 visible = false
 transparency = 0.8
-use_collision = true
 size = Vector3(1.143, 1.448, 1.04)
 
 [node name="SeatedDip" type="CSGBox3D" parent="machines/top"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 4.96548, 0.817146, -4.89851)
 visible = false
 transparency = 0.8
-use_collision = true
 size = Vector3(1.092, 1.372, 0.94)
 
 [node name="LowRow" type="CSGBox3D" parent="machines/top"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.60892, 0.976956, -4.84754)
 visible = false
 transparency = 0.8
-use_collision = true
 size = Vector3(1.22, 1.68, 1.27)
 
 [node name="LateralRaise" type="CSGBox3D" parent="machines/top"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.22214, 0.880318, -4.78359)
 visible = false
 transparency = 0.6
-use_collision = true
 size = Vector3(0.94, 1.5, 1.4)
 
 [node name="PreacherCurl" type="CSGBox3D" parent="machines/top"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.80906, 0.825403, -4.87701)
 visible = false
 transparency = 0.8
-use_collision = true
 size = Vector3(1.04, 1.372, 1.22)
 
 [node name="versaclimber" parent="machines/top" instance=ExtResource("10_hvykf")]
@@ -381,7 +366,8 @@ size = Vector3(2.94, 0.1, 4.48)
 material = SubResource("StandardMaterial3D_hav21")
 
 [node name="Mirror" type="CSGBox3D" parent="machines/middle"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.7352, 1.83321, 0.223426)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.676, 1.83321, 0.223426)
+visible = false
 size = Vector3(0.1, 1.73486, 4.5)
 material = SubResource("StandardMaterial3D_5ur10")
 
@@ -389,112 +375,96 @@ material = SubResource("StandardMaterial3D_5ur10")
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -8.77673, 0.591492, -0.784891)
 visible = false
 transparency = 0.8
-use_collision = true
 size = Vector3(0.66, 0.79, 1.27)
 
 [node name="Bench2" type="CSGBox3D" parent="machines/middle"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -8.77673, 0.587127, 1.58268)
 visible = false
 transparency = 0.8
-use_collision = true
 size = Vector3(0.66, 0.79, 1.27)
 
 [node name="Gravitron" type="CSGBox3D" parent="machines/middle"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -4.14964, 1.19321, -1.41343)
 visible = false
 transparency = 0.8
-use_collision = true
 size = Vector3(1.168, 2.13, 1.65)
 
 [node name="MarpoVMX" type="CSGBox3D" parent="machines/middle"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.88591, 1.34925, 0.278142)
 visible = false
 transparency = 0.8
-use_collision = true
 size = Vector3(1.01, 2.44, 2.08)
 
 [node name="HipAndGlute" type="CSGBox3D" parent="machines/middle"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.06269, 1.04867, 1.90322)
 visible = false
 transparency = 0.8
-use_collision = true
 size = Vector3(1.65, 1.83, 0.99)
 
 [node name="InclinePress" type="CSGBox3D" parent="machines/middle"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.07489, 0.829181, -1.21227)
 visible = false
 transparency = 0.8
-use_collision = true
 size = Vector3(1.07, 1.37, 1.55)
 
 [node name="LowerBack" type="CSGBox3D" parent="machines/middle"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.05733, 0.809196, 0.92976)
 visible = false
 transparency = 0.8
-use_collision = true
 size = Vector3(0.97, 1.37, 1.42)
 
 [node name="VerticalChest" type="CSGBox3D" parent="machines/middle"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.553244, 1.04573, -1.25302)
 visible = false
 transparency = 0.8
-use_collision = true
 size = Vector3(0.99, 1.83, 1.45)
 
 [node name="OverheadPress" type="CSGBox3D" parent="machines/middle"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.582538, 0.860245, 0.913001)
 visible = false
 transparency = 0.8
-use_collision = true
 size = Vector3(1.041, 1.47, 1.448)
 
 [node name="RearDelt" type="CSGBox3D" parent="machines/middle"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.06366, 1.10438, 0.849597)
 visible = false
 transparency = 0.8
-use_collision = true
 size = Vector3(0.889, 1.85, 1.702)
 
 [node name="MidRow" type="CSGBox3D" parent="machines/middle"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.49106, 0.811894, 0.881182)
 visible = false
 transparency = 0.8
-use_collision = true
 size = Vector3(0.965, 1.37, 1.575)
 
 [node name="PecFly" type="CSGBox3D" parent="machines/middle"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.08547, 0.896909, -1.28356)
 visible = false
 transparency = 0.8
-use_collision = true
 size = Vector3(0.94, 1.52, 1.524)
 
 [node name="Pullover" type="CSGBox3D" parent="machines/middle"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.52535, 1.0078, -1.3115)
 visible = false
 transparency = 0.8
-use_collision = true
 size = Vector3(1.168, 1.7, 1.448)
 
 [node name="Abdominal" type="CSGBox3D" parent="machines/middle"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.2755, 0.81286, 1.21326)
 visible = false
 transparency = 0.8
-use_collision = true
 size = Vector3(1.473, 1.37, 0.889)
 
 [node name="Abdominal2" type="CSGBox3D" parent="machines/middle"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.2755, 0.81286, -0.213029)
 visible = false
 transparency = 0.8
-use_collision = true
 size = Vector3(1.473, 1.37, 0.889)
 
 [node name="RotaryTorso" type="CSGBox3D" parent="machines/middle"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.4488, 0.869513, -1.53357)
 visible = false
 transparency = 0.8
-use_collision = true
 size = Vector3(1.118, 1.448, 0.914)
 
 [node name="monkey_bars" parent="machines/middle" instance=ExtResource("5_1kr7m")]
@@ -566,98 +536,84 @@ transform = Transform3D(1.185, 0, 0, 0, 0.96, 0, 0, 0, 0.755, 11.3116, 0.139854,
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.87598, 0.939341, 4.66788)
 visible = false
 transparency = 0.55
-use_collision = true
 size = Vector3(0.97, 1.65, 1.66)
 
 [node name="CurvedTreadmill2" type="CSGBox3D" parent="machines/bottom"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.36622, 0.939341, 4.66788)
 visible = false
 transparency = 0.83
-use_collision = true
 size = Vector3(0.97, 1.65, 1.66)
 
 [node name="WoodwayTreadmill" type="CSGBox3D" parent="machines/bottom"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.73844, 0.968473, 4.54597)
 visible = false
 transparency = 0.8
-use_collision = true
 size = Vector3(1.22, 1.73, 1.93)
 
 [node name="WoodwayTreadmill2" type="CSGBox3D" parent="machines/bottom"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.00903, 0.968473, 4.54597)
 visible = false
 transparency = 0.8
-use_collision = true
 size = Vector3(1.22, 1.73, 1.93)
 
 [node name="WoodwayTreadmill3" type="CSGBox3D" parent="machines/bottom"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.26931, 0.968473, 4.54597)
 visible = false
 transparency = 0.8
-use_collision = true
 size = Vector3(1.22, 1.73, 1.93)
 
 [node name="NordicTrackTreadmill" type="CSGBox3D" parent="machines/bottom"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.657376, 0.897192, 4.50572)
 visible = false
 transparency = 0.8
-use_collision = true
 size = Vector3(0.94, 1.52, 1.956)
 
 [node name="NordicTrackTreadmill2" type="CSGBox3D" parent="machines/bottom"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.811579, 0.897192, 4.50572)
 visible = false
 transparency = 0.8
-use_collision = true
 size = Vector3(0.94, 1.52, 1.956)
 
 [node name="Elliptical" type="CSGBox3D" parent="machines/bottom"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.14958, 0.809086, 4.66719)
 visible = false
 transparency = 0.8
-use_collision = true
 size = Vector3(0.686, 1.346, 1.65)
 
 [node name="Elliptical2" type="CSGBox3D" parent="machines/bottom"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.35975, 0.809086, 4.66719)
 visible = false
 transparency = 0.8
-use_collision = true
 size = Vector3(0.686, 1.346, 1.65)
 
 [node name="Elliptical3" type="CSGBox3D" parent="machines/bottom"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.56855, 0.836035, 4.66719)
 visible = false
 transparency = 0.8
-use_collision = true
 size = Vector3(0.686, 1.346, 1.65)
 
 [node name="Elliptical4" type="CSGBox3D" parent="machines/bottom"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.77871, 0.832194, 4.66719)
 visible = false
 transparency = 0.8
-use_collision = true
 size = Vector3(0.686, 1.346, 1.65)
 
 [node name="Bike" type="CSGBox3D" parent="machines/bottom"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.15595, 0.920948, 4.71083)
 visible = false
 transparency = 0.75
-use_collision = true
 size = Vector3(1.55, 1.57, 0.97)
 
 [node name="IsoTrack" type="CSGBox3D" parent="machines/bottom"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.86454, 0.558568, 4.66344)
 visible = false
 transparency = 0.8
-use_collision = true
 size = Vector3(0.82, 1.65, 1.27)
 
 [node name="IsoTrack2" type="CSGBox3D" parent="machines/bottom"]
 transform = Transform3D(0.987781, 0, 0.155848, 0, 1, 0, -0.155848, 0, 0.987781, 10.7906, 0.558568, 4.50388)
 visible = false
 transparency = 0.8
-use_collision = true
 size = Vector3(0.82, 1.65, 1.27)
 
 [node name="curved treadmill_" parent="machines/bottom" instance=ExtResource("7_8mpic")]

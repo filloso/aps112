@@ -1,0 +1,16 @@
+[gd_resource type="StandardMaterial3D" load_steps=5 format=3 uid="uid://bikh7rf10gqui"]
+
+[ext_resource type="Texture2D" uid="uid://cbhofp5wj3ypx" path="res://addons/texture/brick3/Bricks057_4K-JPG_Color.jpg" id="1_mlqow"]
+[ext_resource type="Texture2D" uid="uid://45ouf1yifult" path="res://addons/texture/brick3/Bricks057_4K-JPG_AmbientOcclusion.jpg" id="2_5vaoj"]
+[ext_resource type="Texture2D" uid="uid://cad08wa8w0ncp" path="res://addons/texture/brick3/Bricks057_4K-JPG_NormalGL.jpg" id="3_myy4k"]
+[ext_resource type="Texture2D" uid="uid://b6ksfkw0ngiap" path="res://addons/texture/brick3/Bricks057_4K-JPG_Roughness.jpg" id="4_mnxqy"]
+
+[resource]
+albedo_texture = ExtResource("1_mlqow")
+roughness_texture = ExtResource("4_mnxqy")
+normal_enabled = true
+normal_texture = ExtResource("3_myy4k")
+ao_enabled = true
+ao_texture = ExtResource("2_5vaoj")
+uv1_scale = Vector3(10.483, 2.151, 10.483)
+uv1_offset = Vector3(0.03, 0.05, 0)
