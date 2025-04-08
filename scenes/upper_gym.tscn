@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=3 uid="uid://yngltng6lfg4"]
+[gd_scene load_steps=58 format=3 uid="uid://yngltng6lfg4"]
 
 [ext_resource type="PackedScene" uid="uid://dcg38qlvi56h1" path="res://scenes/weightRoomTeleporter.tscn" id="2_5ur10"]
 [ext_resource type="PackedScene" uid="uid://bpw88aac1h5en" path="res://scenes/corridorTeleporter.tscn" id="3_1kr7m"]
@@ -19,20 +19,35 @@
 [ext_resource type="PackedScene" uid="uid://d0dvdoestorlb" path="res://addons/gym1/011.tscn" id="13_b6k7h"]
 [ext_resource type="PackedScene" uid="uid://dyvek0mrw5n7u" path="res://addons/gym1/012.tscn" id="14_es1v7"]
 [ext_resource type="PackedScene" uid="uid://cc35ni1cryll3" path="res://addons/blender/marpovmx.blend" id="14_uj6ut"]
-[ext_resource type="PackedScene" uid="uid://bkfe3evd4gcfp" path="res://addons/gym1/013.tscn" id="15_xcinl"]
 [ext_resource type="PackedScene" uid="uid://ctvrwqfo4f2qu" path="res://addons/gym1/019.tscn" id="16_iufv6"]
 [ext_resource type="PackedScene" uid="uid://bnity6lh3fpnf" path="res://addons/gym1/007.tscn" id="16_j4ujy"]
+[ext_resource type="PackedScene" uid="uid://bfyjcapmosk3u" path="res://coloured_machines/gym1/gym1.010.blend" id="18_11feh"]
 [ext_resource type="PackedScene" uid="uid://dmwnirjua21kw" path="res://addons/gym1/003.tscn" id="19_fu8et"]
 [ext_resource type="PackedScene" uid="uid://ln38eqaasv14" path="res://addons/gym1/015.tscn" id="19_s3tam"]
+[ext_resource type="PackedScene" uid="uid://bf2y3bb16mo1r" path="res://coloured_machines/gym1/gym1.011.blend" id="19_u0o2s"]
 [ext_resource type="PackedScene" uid="uid://rokp6c3tqw77" path="res://addons/gym2/014.tscn" id="20_8eob1"]
+[ext_resource type="PackedScene" uid="uid://do4ksrenh8su4" path="res://coloured_machines/gym1/gym1.007.blend" id="20_y2u1c"]
 [ext_resource type="PackedScene" uid="uid://cfdkbk35srdek" path="res://addons/gym2/018.tscn" id="21_n2hus"]
+[ext_resource type="PackedScene" uid="uid://bore06vd5q154" path="res://coloured_machines/gym1/gym1.018.blend" id="21_vsgsv"]
 [ext_resource type="PackedScene" uid="uid://cvyiacd4fvxeu" path="res://addons/gym2/005.tscn" id="22_s3tam"]
+[ext_resource type="PackedScene" uid="uid://dkity7oyo8fou" path="res://coloured_machines/gym1/gym1.019.blend" id="22_sr136"]
 [ext_resource type="PackedScene" uid="uid://b0mg6ild5rpve" path="res://addons/blender/weight_racks.tscn" id="22_x2q35"]
 [ext_resource type="PackedScene" uid="uid://cwkqilxhl43tw" path="res://addons/gym2/007.tscn" id="23_hb0nr"]
+[ext_resource type="PackedScene" uid="uid://cbci4dpgyo10g" path="res://coloured_machines/gym1/gym1.002.blend" id="23_m1juo"]
 [ext_resource type="PackedScene" uid="uid://gwwu0v8nvvix" path="res://addons/gym1/018.tscn" id="24_5e4cc"]
 [ext_resource type="PackedScene" uid="uid://7vub6mgqm30r" path="res://addons/gym2/002.tscn" id="27_x2q35"]
 [ext_resource type="PackedScene" uid="uid://b7sqo8t7f5xm2" path="res://addons/gym2/003.tscn" id="29_5e4cc"]
 [ext_resource type="PackedScene" uid="uid://tjuloj6xn2wx" path="res://addons/gym1/002.tscn" id="29_qe0dr"]
+[ext_resource type="PackedScene" uid="uid://bptbdlcrba0f3" path="res://coloured_machines/gym2/gym2.005.blend" id="32_3416m"]
+[ext_resource type="PackedScene" uid="uid://nd1vacuq5c8m" path="res://coloured_machines/gym2/gym2.002.blend" id="33_tmjd1"]
+[ext_resource type="PackedScene" uid="uid://bxjj2a4rwpku0" path="res://coloured_machines/gym1/gym1.015.blend" id="33_vsgsv"]
+[ext_resource type="PackedScene" uid="uid://qukag8p0ad0p" path="res://coloured_machines/gym2/gym2.007.blend" id="34_bmpe2"]
+[ext_resource type="PackedScene" uid="uid://cutvnrljux8ix" path="res://coloured_machines/gym1/gym1.012.blend" id="34_sr136"]
+[ext_resource type="PackedScene" uid="uid://d16l3tbqv3fgt" path="res://coloured_machines/gym1/gym1.003.blend" id="35_m1juo"]
+[ext_resource type="PackedScene" uid="uid://4a32h2lavc46" path="res://coloured_machines/gym2/gym2.003.blend" id="36_201fs"]
+[ext_resource type="PackedScene" uid="uid://dr7n0byn8mx83" path="res://coloured_machines/gym2/gym2.018.blend" id="36_me5hw"]
+[ext_resource type="PackedScene" uid="uid://betqmi76abrdq" path="res://coloured_machines/gym2/gym2.019.blend" id="37_n8fij"]
+[ext_resource type="PackedScene" uid="uid://cmcfo2e04fi0y" path="res://coloured_machines/gym2/gym2.014.blend" id="38_6cub7"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_g5lea"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -165,499 +180,678 @@ material = ExtResource("8_fu8et")
 [node name="top" type="Node3D" parent="machines"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.841565, 0, 0)
 
-[node name="Concept2RowingMachines" parent="machines/top" instance=ExtResource("4_5ur10")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -9.9913, 0.227828, -4.22056)
+[node name="Boxes" type="Node3D" parent="machines/top"]
+visible = false
 
-[node name="Concept2RowingMachines2" parent="machines/top" instance=ExtResource("4_5ur10")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -8.9299, 0.227828, -4.22056)
-
-[node name="Concept2RowingMachines3" parent="machines/top" instance=ExtResource("4_5ur10")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -7.87697, 0.227828, -4.22056)
-
-[node name="Concept2RowingMachines4" parent="machines/top" instance=ExtResource("4_5ur10")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -6.81557, 0.227828, -4.22056)
-
-[node name="VersaClimber" type="CSGBox3D" parent="machines/top"]
+[node name="VersaClimber" type="CSGBox3D" parent="machines/top/Boxes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.36082, 1.31877, -4.75552)
 visible = false
 transparency = 0.75
 size = Vector3(1.16, 2.38, 1.09)
 
-[node name="SkiErg" type="CSGCombiner3D" parent="machines/top"]
+[node name="SkiErg" type="CSGCombiner3D" parent="machines/top/Boxes"]
 visible = false
 transparency = 0.8
 
-[node name="SkiErg" type="CSGBox3D" parent="machines/top/SkiErg"]
+[node name="SkiErg" type="CSGBox3D" parent="machines/top/Boxes/SkiErg"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.05711, 1.20644, -5.26341)
 size = Vector3(0.52, 2.15, 0.41)
 
-[node name="FloorStand" type="CSGBox3D" parent="machines/top/SkiErg"]
+[node name="FloorStand" type="CSGBox3D" parent="machines/top/Boxes/SkiErg"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.05919, 0.186717, -4.38578)
 size = Vector3(0.61, 0.05, 1.32)
 
-[node name="SkiErg2" type="CSGCombiner3D" parent="machines/top"]
+[node name="SkiErg2" type="CSGCombiner3D" parent="machines/top/Boxes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1809, 0, 0)
 visible = false
 transparency = 0.8
 
-[node name="SkiErg" type="CSGBox3D" parent="machines/top/SkiErg2"]
+[node name="SkiErg" type="CSGBox3D" parent="machines/top/Boxes/SkiErg2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.05711, 1.20644, -5.26341)
 size = Vector3(0.52, 2.15, 0.41)
 
-[node name="FloorStand" type="CSGBox3D" parent="machines/top/SkiErg2"]
+[node name="FloorStand" type="CSGBox3D" parent="machines/top/Boxes/SkiErg2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.05919, 0.186717, -4.38578)
 size = Vector3(0.61, 0.05, 1.32)
 
-[node name="LatPulldown" type="CSGBox3D" parent="machines/top"]
+[node name="LatPulldown" type="CSGBox3D" parent="machines/top/Boxes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.20441, 1.26032, -4.53243)
-visible = false
 transparency = 0.7
 size = Vector3(0.762, 2.26, 1.854)
 
-[node name="CompoundRow" type="CSGBox3D" parent="machines/top"]
+[node name="CompoundRow" type="CSGBox3D" parent="machines/top/Boxes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.220853, 0.994497, -4.48602)
-visible = false
 transparency = 0.8
 size = Vector3(0.89, 1.7, 1.91)
 
-[node name="VTriceps" type="CSGBox3D" parent="machines/top"]
+[node name="VTriceps" type="CSGBox3D" parent="machines/top/Boxes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.77749, 0.848346, -4.86872)
-visible = false
 transparency = 0.8
 size = Vector3(1.04, 1.47, 1.23)
 
-[node name="BicepsCurl" type="CSGBox3D" parent="machines/top"]
+[node name="BicepsCurl" type="CSGBox3D" parent="machines/top/Boxes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.42125, 0.862264, -4.96428)
-visible = false
 transparency = 0.8
 size = Vector3(1.143, 1.448, 1.04)
 
-[node name="SeatedDip" type="CSGBox3D" parent="machines/top"]
+[node name="SeatedDip" type="CSGBox3D" parent="machines/top/Boxes"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 4.96548, 0.817146, -4.89851)
-visible = false
 transparency = 0.8
 size = Vector3(1.092, 1.372, 0.94)
 
-[node name="LowRow" type="CSGBox3D" parent="machines/top"]
+[node name="LowRow" type="CSGBox3D" parent="machines/top/Boxes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.60892, 0.976956, -4.84754)
-visible = false
 transparency = 0.8
 size = Vector3(1.22, 1.68, 1.27)
 
-[node name="LateralRaise" type="CSGBox3D" parent="machines/top"]
+[node name="LateralRaise" type="CSGBox3D" parent="machines/top/Boxes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.22214, 0.880318, -4.78359)
-visible = false
 transparency = 0.6
 size = Vector3(0.94, 1.5, 1.4)
 
-[node name="PreacherCurl" type="CSGBox3D" parent="machines/top"]
+[node name="PreacherCurl" type="CSGBox3D" parent="machines/top/Boxes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.80906, 0.825403, -4.87701)
-visible = false
 transparency = 0.8
 size = Vector3(1.04, 1.372, 1.22)
 
-[node name="versaclimber" parent="machines/top" instance=ExtResource("10_hvykf")]
+[node name="Old" type="Node3D" parent="machines/top"]
+
+[node name="010LatPulldown" parent="machines/top/Old" instance=ExtResource("12_0oun8")]
+transform = Transform3D(0.86, 0, 0, 0, 1.13, 0, 0, 0, 1.16, -1.25454, 0.186377, -4.76968)
+visible = false
+
+[node name="011LatRaise" parent="machines/top/Old" instance=ExtResource("13_b6k7h")]
+transform = Transform3D(1.16, 0, 0, 0, 0.855, 0, 0, 0, 1.185, 8.19846, 0.146284, -4.71302)
+visible = false
+
+[node name="011BicepsCurl" parent="machines/top/Old" instance=ExtResource("13_b6k7h")]
+transform = Transform3D(1.36, 0, 0, 0, 0.775, 0, 0, 0, 0.945, 3.43363, 0.146284, -4.90664)
+visible = false
+
+[node name="011VTriceps" parent="machines/top/Old" instance=ExtResource("13_b6k7h")]
+transform = Transform3D(1.36, 0, 0, 0, 0.775, 0, 0, 0, 1.065, 1.75414, 0.146284, -4.83586)
+visible = false
+
+[node name="007CompoundRow" parent="machines/top/Old" instance=ExtResource("16_j4ujy")]
+transform = Transform3D(-0.0132177, 0, -1.16491, 0, 1.415, 0, 1.08492, 0, -0.0141922, 0.346559, 0, -4.5772)
+visible = false
+
+[node name="018LowRow" parent="machines/top/Old" instance=ExtResource("24_5e4cc")]
+transform = Transform3D(1.62, 0, 0, 0, 0.81, 0, 0, 0, 0.81, 6.68273, 0.154394, -4.79514)
+visible = false
+
+[node name="019SeatedDip" parent="machines/top/Old" instance=ExtResource("16_iufv6")]
+transform = Transform3D(0.585, 0, 0, 0, 0.65, 0, 0, 0, 1, 4.80158, 0.124225, -4.93273)
+visible = false
+
+[node name="002PreacherCurl" parent="machines/top/Old" instance=ExtResource("29_qe0dr")]
+transform = Transform3D(0.96, 0, 0, 0, 0.95, 0, 0, 0, 1.095, 9.88314, 0.148213, -4.48347)
+visible = false
+
+[node name="Coloured" type="Node3D" parent="machines/top"]
+
+[node name="Concept2RowingMachines" parent="machines/top/Coloured" instance=ExtResource("4_5ur10")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -9.9913, 0.227828, -4.22056)
+
+[node name="Concept2RowingMachines2" parent="machines/top/Coloured" instance=ExtResource("4_5ur10")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -8.9299, 0.227828, -4.22056)
+
+[node name="Concept2RowingMachines3" parent="machines/top/Coloured" instance=ExtResource("4_5ur10")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -7.87697, 0.227828, -4.22056)
+
+[node name="Concept2RowingMachines4" parent="machines/top/Coloured" instance=ExtResource("4_5ur10")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -6.81557, 0.227828, -4.22056)
+
+[node name="versaclimber" parent="machines/top/Coloured" instance=ExtResource("10_hvykf")]
 transform = Transform3D(-0.135, 0, -2.41593e-08, 0, 0.145, 0, 2.03844e-08, 0, -0.16, -5.48158, 0.207749, -4.60472)
 
-[node name="SkiErg3" parent="machines/top" instance=ExtResource("11_wm6b1")]
+[node name="SkiErg3" parent="machines/top/Coloured" instance=ExtResource("11_wm6b1")]
 transform = Transform3D(-9.83506e-09, 0, -0.195, 0, 0.185, 0, 0.225, 0, -8.52372e-09, -4.0572, 0.334139, -5.35252)
 
-[node name="SkiErg4" parent="machines/top" instance=ExtResource("11_wm6b1")]
+[node name="SkiErg4" parent="machines/top/Coloured" instance=ExtResource("11_wm6b1")]
 transform = Transform3D(-9.83506e-09, 0, -0.195, 0, 0.185, 0, 0.225, 0, -8.52372e-09, -2.86715, 0.334139, -5.36808)
 
-[node name="010LatPulldown" parent="machines/top" instance=ExtResource("12_0oun8")]
-transform = Transform3D(0.86, 0, 0, 0, 1.13, 0, 0, 0, 1.16, -1.25454, 0.186377, -4.76968)
+[node name="010LatPulldown" parent="machines/top/Coloured" instance=ExtResource("18_11feh")]
+transform = Transform3D(0.655, 0, 0, 0, 1.14, 0, 0, 0, 1, -1.23122, 0.147193, -4.68799)
 
-[node name="011LatRaise" parent="machines/top" instance=ExtResource("13_b6k7h")]
-transform = Transform3D(1.16, 0, 0, 0, 0.855, 0, 0, 0, 1.185, 8.19846, 0.146284, -4.71302)
+[node name="011LatRaise" parent="machines/top/Coloured" instance=ExtResource("19_u0o2s")]
+transform = Transform3D(1.25, 0, 0, 0, 0.97, 0, 0, 0, 1.045, 8.24174, 0.142327, -4.79583)
 
-[node name="011BicepsCurl" parent="machines/top" instance=ExtResource("13_b6k7h")]
-transform = Transform3D(1.36, 0, 0, 0, 0.775, 0, 0, 0, 0.945, 3.43363, 0.146284, -4.90664)
+[node name="011BicepsCurl" parent="machines/top/Coloured" instance=ExtResource("19_u0o2s")]
+transform = Transform3D(1.575, 0, 0, 0, 1.235, 0, 0, 0, 0.84, 3.45491, 0.142327, -4.95455)
 
-[node name="011VTriceps" parent="machines/top" instance=ExtResource("13_b6k7h")]
-transform = Transform3D(1.36, 0, 0, 0, 0.775, 0, 0, 0, 1.065, 1.75414, 0.146284, -4.83586)
+[node name="011VTriceps" parent="machines/top/Coloured" instance=ExtResource("19_u0o2s")]
+transform = Transform3D(1.365, 0, 0, 0, 0.82, 0, 0, 0, 1.1, 1.71068, 0.150313, -4.91827)
 
-[node name="007CompoundRow" parent="machines/top" instance=ExtResource("16_j4ujy")]
-transform = Transform3D(-0.0132177, 0, -1.16491, 0, 1.415, 0, 1.08492, 0, -0.0141922, 0.346559, 0, -4.5772)
+[node name="007CompoundRow" parent="machines/top/Coloured" instance=ExtResource("20_y2u1c")]
+transform = Transform3D(-4.74269e-08, 0, -0.95, 0, 1.17, 0, 1.085, 0, -4.15258e-08, 0.269767, 0.149883, -4.54761)
 
-[node name="018LowRow" parent="machines/top" instance=ExtResource("24_5e4cc")]
-transform = Transform3D(1.62, 0, 0, 0, 0.81, 0, 0, 0, 0.81, 6.68273, 0.154394, -4.79514)
+[node name="018LowRow" parent="machines/top/Coloured" instance=ExtResource("21_vsgsv")]
+transform = Transform3D(1.78, 0, 0, 0, 1, 0, 0, 0, 0.755, 6.6514, 0.146694, -4.78824)
 
-[node name="019SeatedDip" parent="machines/top" instance=ExtResource("16_iufv6")]
-transform = Transform3D(0.585, 0, 0, 0, 0.65, 0, 0, 0, 1, 4.80158, 0.124225, -4.93273)
+[node name="019SeatedDip2" parent="machines/top/Coloured" instance=ExtResource("22_sr136")]
+transform = Transform3D(0.665, 0, 0, 0, 0.735, 0, 0, 0, 1, 4.83357, 0.138102, -4.96797)
 
-[node name="002PreacherCurl" parent="machines/top" instance=ExtResource("29_qe0dr")]
-transform = Transform3D(0.96, 0, 0, 0, 0.95, 0, 0, 0, 1.095, 9.88314, 0.148213, -4.48347)
+[node name="002PreacherCurl" parent="machines/top/Coloured" instance=ExtResource("23_m1juo")]
+transform = Transform3D(0.835, 0, 0, 0, 0.95, 0, 0, 0, 1.06, 9.83477, 0.142485, -4.51723)
 
 [node name="elliptical" type="Node3D" parent="machines"]
 
-[node name="LegExtension" type="CSGBox3D" parent="machines/elliptical"]
+[node name="Boxes" type="Node3D" parent="machines/elliptical"]
+
+[node name="LegExtension" type="CSGBox3D" parent="machines/elliptical/Boxes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.416, 0.823515, 0)
 visible = false
 transparency = 0.8
 size = Vector3(1.397, 1.372, 0.914)
 
-[node name="LegExtension2" type="CSGBox3D" parent="machines/elliptical"]
+[node name="LegExtension2" type="CSGBox3D" parent="machines/elliptical/Boxes"]
 transform = Transform3D(0.906212, 0, 0.422824, 0, 1, 0, -0.422824, 0, 0.906212, 14.9899, 0.823515, -1.72239)
 visible = false
 transparency = 0.8
 size = Vector3(1.397, 1.372, 0.914)
 
-[node name="HipAbduction" type="CSGBox3D" parent="machines/elliptical"]
+[node name="HipAbduction" type="CSGBox3D" parent="machines/elliptical/Boxes"]
 transform = Transform3D(0.756436, 0, -0.654068, 0, 1, 0, 0.654068, 0, 0.756436, 13.8482, 0.82821, -3.34453)
 visible = false
 transparency = 0.8
 size = Vector3(0.889, 1.372, 1.473)
 
-[node name="HipAbduction2" type="CSGBox3D" parent="machines/elliptical"]
+[node name="HipAbduction2" type="CSGBox3D" parent="machines/elliptical/Boxes"]
 transform = Transform3D(0.924573, 0, -0.381006, 0, 1, 0, 0.381006, 0, 0.924573, 12.3634, 0.82821, -4.32904)
 visible = false
 transparency = 0.8
 size = Vector3(0.889, 1.372, 1.473)
 
-[node name="HorizontalCalf" type="CSGBox3D" parent="machines/elliptical"]
+[node name="HorizontalCalf" type="CSGBox3D" parent="machines/elliptical/Boxes"]
 transform = Transform3D(0.940038, 0, 0.341069, 0, 1, 0, -0.341069, 0, 0.940038, 12.4897, 0.826895, 4.05266)
 visible = false
 transparency = 0.8
 size = Vector3(0.88, 1.39, 1.57)
 
-[node name="SeatedLegCurl" type="CSGBox3D" parent="machines/elliptical"]
+[node name="SeatedLegCurl" type="CSGBox3D" parent="machines/elliptical/Boxes"]
 transform = Transform3D(0.750642, 0, 0.660709, 0, 1, 0, -0.660709, 0, 0.750642, 13.9882, 0.814396, 3.05585)
 visible = false
 transparency = 0.8
 size = Vector3(0.889, 1.372, 1.321)
 
-[node name="ProneLegCurl" type="CSGBox3D" parent="machines/elliptical"]
+[node name="ProneLegCurl" type="CSGBox3D" parent="machines/elliptical/Boxes"]
 transform = Transform3D(0.412421, 0, 0.910993, 0, 1, 0, -0.910993, 0, 0.412421, 14.9849, 0.814396, 1.72426)
 visible = false
 transparency = 0.8
 size = Vector3(0.889, 1.372, 1.321)
 
-[node name="012LegCurl" parent="machines/elliptical" instance=ExtResource("14_es1v7")]
+[node name="Old" type="Node3D" parent="machines/elliptical"]
+
+[node name="012LegCurl" parent="machines/elliptical/Old" instance=ExtResource("14_es1v7")]
 transform = Transform3D(0.599715, 0, -0.367759, 0, 0.89, 0, 0.416223, 0, 0.529885, 15.0289, 0.139703, 1.70305)
-
-[node name="012LegCurl2" parent="machines/elliptical" instance=ExtResource("14_es1v7")]
-transform = Transform3D(0.307737, 0, -0.584887, 0, 0.89, 0, 0.661965, 0, 0.271905, 14.0387, 0.139703, 3.13688)
-
-[node name="013" parent="machines/elliptical" instance=ExtResource("15_xcinl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.9571, 1.11324, -0.139448)
 visible = false
 
-[node name="007HorizontalCalf" parent="machines/elliptical" instance=ExtResource("16_j4ujy")]
+[node name="012LegCurl2" parent="machines/elliptical/Old" instance=ExtResource("14_es1v7")]
+transform = Transform3D(0.307737, 0, -0.584887, 0, 0.89, 0, 0.661965, 0, 0.271905, 14.0387, 0.139703, 3.13688)
+visible = false
+
+[node name="007HorizontalCalf" parent="machines/elliptical/Old" instance=ExtResource("16_j4ujy")]
 transform = Transform3D(0.0493378, 0, -0.998782, 0, 1, 0, 0.998782, 0, 0.0493378, 12.5044, 0.155101, 4.15124)
+visible = false
 
-[node name="003LegExtension" parent="machines/elliptical" instance=ExtResource("19_fu8et")]
+[node name="003LegExtension" parent="machines/elliptical/Old" instance=ExtResource("19_fu8et")]
 transform = Transform3D(1.175, 0, 0, 0, 0.965, 0, 0, 0, 0.95, 15.3862, 0.139496, 0.00492528)
+visible = false
 
-[node name="003LegExtension2" parent="machines/elliptical" instance=ExtResource("19_fu8et")]
+[node name="003LegExtension2" parent="machines/elliptical/Old" instance=ExtResource("19_fu8et")]
 transform = Transform3D(1.03789, 0, 0.45473, 0, 0.965, 0, -0.550832, 0, 0.856809, 14.9797, 0.139496, -1.69864)
+visible = false
 
-[node name="018HipAbduction" parent="machines/elliptical" instance=ExtResource("24_5e4cc")]
+[node name="018HipAbduction" parent="machines/elliptical/Old" instance=ExtResource("24_5e4cc")]
 transform = Transform3D(0.970731, 0, -0.346862, 0, 0.675, 0, 0.400225, 0, 0.841301, 12.3949, 0.142257, -4.2397)
+visible = false
 
-[node name="018HipAbduction2" parent="machines/elliptical" instance=ExtResource("24_5e4cc")]
+[node name="018HipAbduction2" parent="machines/elliptical/Old" instance=ExtResource("24_5e4cc")]
 transform = Transform3D(0.793478, 0, -0.595982, 0, 0.675, 0, 0.687672, 0, 0.687681, 13.7518, 0.142257, -3.24493)
+visible = false
+
+[node name="Coloured" type="Node3D" parent="machines/elliptical"]
+
+[node name="018HipAbduction" parent="machines/elliptical/Coloured" instance=ExtResource("21_vsgsv")]
+transform = Transform3D(1.17089, 0, -0.352434, 0, 0.735, 0, 0.491859, 0, 0.838982, 12.3542, 0.0367847, -4.22674)
+
+[node name="018HipAbduction2" parent="machines/elliptical/Coloured" instance=ExtResource("21_vsgsv")]
+transform = Transform3D(0.96747, 0, -0.589523, 0, 0.735, 0, 0.822741, 0, 0.693226, 13.8773, 0.0367847, -3.31149)
+
+[node name="007HorizontalCalf" parent="machines/elliptical/Coloured" instance=ExtResource("20_y2u1c")]
+transform = Transform3D(0.327861, 0, -0.944726, 0, 1, 0, 0.944726, 0, 0.327861, 12.5268, 0.149798, 4.25047)
+
+[node name="012LegCurl" parent="machines/elliptical/Coloured" instance=ExtResource("34_sr136")]
+transform = Transform3D(0.443951, 0, -0.704608, 0, 0.865, 0, 0.713097, 0, 0.438665, 14.1843, 0.155412, 3.20175)
+
+[node name="012LegCurl2" parent="machines/elliptical/Coloured" instance=ExtResource("34_sr136")]
+transform = Transform3D(0.727307, 0, -0.415263, 0, 0.865, 0, 0.420267, 0, 0.718649, 15.2037, 0.155412, 1.72435)
+
+[node name="003LegExtension" parent="machines/elliptical/Coloured" instance=ExtResource("35_m1juo")]
+transform = Transform3D(0.865, 0, 0, 0, 0.93, 0, 0, 0, 1.015, 15.3991, 0.129158, 0.0273864)
+
+[node name="003LegExtension2" parent="machines/elliptical/Coloured" instance=ExtResource("35_m1juo")]
+transform = Transform3D(0.756033, 0, 0.493166, 0, 0.93, 0, -0.420284, 0, 0.887137, 14.9933, 0.129158, -1.71813)
 
 [node name="middle" type="Node3D" parent="machines"]
 
-[node name="Mat" type="CSGBox3D" parent="machines/middle"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.81549, 0.130626, 0.248204)
-size = Vector3(2.94, 0.1, 4.48)
-material = SubResource("StandardMaterial3D_hav21")
+[node name="Boxes" type="Node3D" parent="machines/middle"]
 
-[node name="Mirror" type="CSGBox3D" parent="machines/middle"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.676, 1.83321, 0.223426)
-visible = false
-size = Vector3(0.1, 1.73486, 4.5)
-material = SubResource("StandardMaterial3D_5ur10")
-
-[node name="Bench" type="CSGBox3D" parent="machines/middle"]
+[node name="Bench" type="CSGBox3D" parent="machines/middle/Boxes"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -8.77673, 0.591492, -0.784891)
 visible = false
 transparency = 0.8
 size = Vector3(0.66, 0.79, 1.27)
 
-[node name="Bench2" type="CSGBox3D" parent="machines/middle"]
+[node name="Bench2" type="CSGBox3D" parent="machines/middle/Boxes"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -8.77673, 0.587127, 1.58268)
 visible = false
 transparency = 0.8
 size = Vector3(0.66, 0.79, 1.27)
 
-[node name="Gravitron" type="CSGBox3D" parent="machines/middle"]
+[node name="Gravitron" type="CSGBox3D" parent="machines/middle/Boxes"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -4.14964, 1.19321, -1.41343)
 visible = false
 transparency = 0.8
 size = Vector3(1.168, 2.13, 1.65)
 
-[node name="MarpoVMX" type="CSGBox3D" parent="machines/middle"]
+[node name="MarpoVMX" type="CSGBox3D" parent="machines/middle/Boxes"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.88591, 1.34925, 0.278142)
 visible = false
 transparency = 0.8
 size = Vector3(1.01, 2.44, 2.08)
 
-[node name="HipAndGlute" type="CSGBox3D" parent="machines/middle"]
+[node name="HipAndGlute" type="CSGBox3D" parent="machines/middle/Boxes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.06269, 1.04867, 1.90322)
 visible = false
 transparency = 0.8
 size = Vector3(1.65, 1.83, 0.99)
 
-[node name="InclinePress" type="CSGBox3D" parent="machines/middle"]
+[node name="InclinePress" type="CSGBox3D" parent="machines/middle/Boxes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.07489, 0.829181, -1.21227)
 visible = false
 transparency = 0.8
 size = Vector3(1.07, 1.37, 1.55)
 
-[node name="LowerBack" type="CSGBox3D" parent="machines/middle"]
+[node name="LowerBack" type="CSGBox3D" parent="machines/middle/Boxes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.05733, 0.809196, 0.92976)
 visible = false
 transparency = 0.8
 size = Vector3(0.97, 1.37, 1.42)
 
-[node name="VerticalChest" type="CSGBox3D" parent="machines/middle"]
+[node name="VerticalChest" type="CSGBox3D" parent="machines/middle/Boxes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.553244, 1.04573, -1.25302)
 visible = false
 transparency = 0.8
 size = Vector3(0.99, 1.83, 1.45)
 
-[node name="OverheadPress" type="CSGBox3D" parent="machines/middle"]
+[node name="OverheadPress" type="CSGBox3D" parent="machines/middle/Boxes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.582538, 0.860245, 0.913001)
 visible = false
 transparency = 0.8
 size = Vector3(1.041, 1.47, 1.448)
 
-[node name="RearDelt" type="CSGBox3D" parent="machines/middle"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.06366, 1.10438, 0.849597)
+[node name="RearDelt" type="CSGBox3D" parent="machines/middle/Boxes"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.05899, 1.09989, 0.851629)
 visible = false
 transparency = 0.8
 size = Vector3(0.889, 1.85, 1.702)
 
-[node name="MidRow" type="CSGBox3D" parent="machines/middle"]
+[node name="MidRow" type="CSGBox3D" parent="machines/middle/Boxes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.49106, 0.811894, 0.881182)
 visible = false
 transparency = 0.8
 size = Vector3(0.965, 1.37, 1.575)
 
-[node name="PecFly" type="CSGBox3D" parent="machines/middle"]
+[node name="PecFly" type="CSGBox3D" parent="machines/middle/Boxes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.08547, 0.896909, -1.28356)
 visible = false
 transparency = 0.8
 size = Vector3(0.94, 1.52, 1.524)
 
-[node name="Pullover" type="CSGBox3D" parent="machines/middle"]
+[node name="Pullover" type="CSGBox3D" parent="machines/middle/Boxes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.52535, 1.0078, -1.3115)
 visible = false
 transparency = 0.8
 size = Vector3(1.168, 1.7, 1.448)
 
-[node name="Abdominal" type="CSGBox3D" parent="machines/middle"]
+[node name="Abdominal" type="CSGBox3D" parent="machines/middle/Boxes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.2755, 0.81286, 1.21326)
 visible = false
 transparency = 0.8
 size = Vector3(1.473, 1.37, 0.889)
 
-[node name="Abdominal2" type="CSGBox3D" parent="machines/middle"]
+[node name="Abdominal2" type="CSGBox3D" parent="machines/middle/Boxes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.2755, 0.81286, -0.213029)
 visible = false
 transparency = 0.8
 size = Vector3(1.473, 1.37, 0.889)
 
-[node name="RotaryTorso" type="CSGBox3D" parent="machines/middle"]
+[node name="RotaryTorso" type="CSGBox3D" parent="machines/middle/Boxes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.4488, 0.869513, -1.53357)
 visible = false
 transparency = 0.8
 size = Vector3(1.118, 1.448, 0.914)
 
-[node name="monkey_bars" parent="machines/middle" instance=ExtResource("5_1kr7m")]
+[node name="Old" type="Node3D" parent="machines/middle"]
+
+[node name="Mat" type="CSGBox3D" parent="machines/middle/Old"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.81549, 0.130626, 0.248204)
+size = Vector3(2.94, 0.1, 4.48)
+material = SubResource("StandardMaterial3D_hav21")
+
+[node name="Mirror" type="CSGBox3D" parent="machines/middle/Old"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.676, 1.83321, 0.223426)
+visible = false
+size = Vector3(0.1, 1.73486, 4.5)
+material = SubResource("StandardMaterial3D_5ur10")
+
+[node name="monkey_bars" parent="machines/middle/Old" instance=ExtResource("5_1kr7m")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 3.80727, 1.495, -0.149691)
 
-[node name="WipesStand" parent="machines/middle" instance=ExtResource("9_ekauw")]
+[node name="WipesStand" parent="machines/middle/Old" instance=ExtResource("9_ekauw")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.4001, 0.654161, 2.90621)
 
-[node name="WipesStand2" parent="machines/middle" instance=ExtResource("9_ekauw")]
+[node name="WipesStand2" parent="machines/middle/Old" instance=ExtResource("9_ekauw")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.29242, 0.654161, -0.249037)
 
-[node name="marpovmx" parent="machines/middle" instance=ExtResource("14_uj6ut")]
+[node name="marpovmx" parent="machines/middle/Old" instance=ExtResource("14_uj6ut")]
 transform = Transform3D(-1.04907e-08, 0, 0.15, 0, 0.205, 0, -0.24, 0, -6.55671e-09, -4.37334, 0.473522, 0.228907)
 
-[node name="015RearDeltAndPecFly" parent="machines/middle" instance=ExtResource("19_s3tam")]
+[node name="015RearDeltAndPecFly" parent="machines/middle/Old" instance=ExtResource("19_s3tam")]
 transform = Transform3D(1.105, 0, 0, 0, 1.05, 0, 0, 0, 1.12, 8.06444, 0.148502, 0.985155)
+visible = false
 
-[node name="014FlatBench" parent="machines/middle" instance=ExtResource("20_8eob1")]
+[node name="014FlatBench" parent="machines/middle/Old" instance=ExtResource("20_8eob1")]
 transform = Transform3D(8.07828e-08, 0, -1.12, 0, 1, 0, 1.07, 0, 8.45576e-08, -8.56628, 0.188274, -0.876217)
+visible = false
 
-[node name="014FlatBench2" parent="machines/middle" instance=ExtResource("20_8eob1")]
+[node name="014FlatBench2" parent="machines/middle/Old" instance=ExtResource("20_8eob1")]
 transform = Transform3D(8.07828e-08, 0, -1.12, 0, 1, 0, 1.07, 0, 8.45576e-08, -8.56628, 0.188274, 1.5067)
+visible = false
 
-[node name="018Gravitron" parent="machines/middle" instance=ExtResource("21_n2hus")]
+[node name="018Gravitron" parent="machines/middle/Old" instance=ExtResource("21_n2hus")]
 transform = Transform3D(-4.45856e-08, 0, -1.765, 0, 1, 0, 1.02, 0, -7.71506e-08, -4.36563, 0.183783, -1.30529)
+visible = false
 
-[node name="weight_racks" parent="machines/middle" instance=ExtResource("22_x2q35")]
+[node name="weight_racks" parent="machines/middle/Old" instance=ExtResource("22_x2q35")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9.47243, 0.161956, -0.474225)
+visible = false
 
-[node name="weight_racks2" parent="machines/middle" instance=ExtResource("22_x2q35")]
+[node name="weight_racks2" parent="machines/middle/Old" instance=ExtResource("22_x2q35")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9.47243, 0.161956, -2.51692)
+visible = false
 
-[node name="018VerticalChest" parent="machines/middle" instance=ExtResource("24_5e4cc")]
+[node name="018VerticalChest" parent="machines/middle/Old" instance=ExtResource("24_5e4cc")]
 transform = Transform3D(-1.355, 0, 1.47221e-07, 0, 0.995, 0, -2.04599e-07, 0, -0.975, -0.593109, 0, -1.32557)
+visible = false
 
-[node name="002LowerBack" parent="machines/middle" instance=ExtResource("29_qe0dr")]
+[node name="002LowerBack" parent="machines/middle/Old" instance=ExtResource("29_qe0dr")]
 transform = Transform3D(-4.37114e-08, 0, -0.845, 0, 0.935, 0, 1, 0, -3.69361e-08, -2.35303, 0.159082, 1.16474)
+visible = false
 
-[node name="018HipandGlute" parent="machines/middle" instance=ExtResource("24_5e4cc")]
+[node name="018HipandGlute" parent="machines/middle/Old" instance=ExtResource("24_5e4cc")]
 transform = Transform3D(-5.68248e-08, 0, -1.045, 0, 0.885, 0, 1.3, 0, -4.56784e-08, -4.17531, 0.145836, 1.76527)
+visible = false
 
-[node name="011OverheadPress" parent="machines/middle" instance=ExtResource("13_b6k7h")]
+[node name="011OverheadPress" parent="machines/middle/Old" instance=ExtResource("13_b6k7h")]
 transform = Transform3D(1.31, 0, 0, 0, 0.83, 0, 0, 0, 1.235, -0.583277, 0.161814, 0.933851)
+visible = false
 
-[node name="011InclinePress" parent="machines/middle" instance=ExtResource("13_b6k7h")]
+[node name="011InclinePress" parent="machines/middle/Old" instance=ExtResource("13_b6k7h")]
 transform = Transform3D(-1.33, 0, 1.81195e-07, 0, 0.73, 0, -2.00824e-07, 0, -1.2, -2.08783, 0.146329, -1.19863)
+visible = false
 
-[node name="011PecFly" parent="machines/middle" instance=ExtResource("13_b6k7h")]
+[node name="011PecFly" parent="machines/middle/Old" instance=ExtResource("13_b6k7h")]
 transform = Transform3D(-1.165, 0, 1.81195e-07, 0, 0.865, 0, -1.7591e-07, 0, -1.2, 8.05163, 0.146329, -1.27384)
+visible = false
 
-[node name="003Pullover" parent="machines/middle" instance=ExtResource("19_fu8et")]
+[node name="003Pullover" parent="machines/middle/Old" instance=ExtResource("19_fu8et")]
 transform = Transform3D(-4.37114e-08, 0, 1.155, 0, 1.125, 0, -1, 0, -5.04867e-08, 9.50771, 0.205451, -1.21947)
+visible = false
 
-[node name="012MidRow" parent="machines/middle" instance=ExtResource("14_es1v7")]
+[node name="012MidRow" parent="machines/middle/Old" instance=ExtResource("14_es1v7")]
 transform = Transform3D(-3.4532e-08, 0, -0.815, 0, 0.865, 0, 0.79, 0, -3.56248e-08, 9.5904, 0.134372, 0.901015)
+visible = false
 
-[node name="003RotaryTorso" parent="machines/middle" instance=ExtResource("19_fu8et")]
+[node name="003RotaryTorso" parent="machines/middle/Old" instance=ExtResource("19_fu8et")]
 transform = Transform3D(0.812665, 0, 0.0798003, 0, 1.025, 0, -0.0616467, 0, 1.05198, 11.0273, 0.143239, -1.53499)
+visible = false
 
-[node name="002Abdominal" parent="machines/middle" instance=ExtResource("29_qe0dr")]
+[node name="002Abdominal" parent="machines/middle/Old" instance=ExtResource("29_qe0dr")]
 transform = Transform3D(1.185, 0, 0, 0, 0.96, 0, 0, 0, 0.755, 11.3116, 0.139854, 0.0475557)
+visible = false
 
-[node name="002Abdominal2" parent="machines/middle" instance=ExtResource("29_qe0dr")]
+[node name="002Abdominal2" parent="machines/middle/Old" instance=ExtResource("29_qe0dr")]
 transform = Transform3D(1.185, 0, 0, 0, 0.96, 0, 0, 0, 0.755, 11.3116, 0.139854, 1.49473)
+visible = false
+
+[node name="Coloured" type="Node3D" parent="machines/middle"]
+
+[node name="018HipandGlute" parent="machines/middle/Coloured" instance=ExtResource("21_vsgsv")]
+transform = Transform3D(-5.28908e-08, 0, -1.075, 0, 0.855, 0, 1.21, 0, -4.69897e-08, -4.15651, 0.146694, 1.63654)
+
+[node name="011InclinePress" parent="machines/middle/Coloured" instance=ExtResource("19_u0o2s")]
+transform = Transform3D(-1.31, 0, 1.73645e-07, 0, 0.825, 0, -1.97804e-07, 0, -1.15, -2.11248, 0.146521, -1.21534)
+
+[node name="002LowerBack" parent="machines/middle/Coloured" instance=ExtResource("23_m1juo")]
+transform = Transform3D(-5.42021e-08, 0, -0.805, 0, 0.945, 0, 1.24, 0, -3.51877e-08, -2.36603, 0.153276, 0.953105)
+
+[node name="018VerticalChest" parent="machines/middle/Coloured" instance=ExtResource("21_vsgsv")]
+transform = Transform3D(-1.245, 0, 1.22307e-07, 0, 0.85, 0, -1.8799e-07, 0, -0.81, -0.592228, 0.146694, -1.29902)
+
+[node name="011OverheadPress" parent="machines/middle/Coloured" instance=ExtResource("19_u0o2s")]
+transform = Transform3D(1.35, 0, 0, 0, 0.79, 0, 0, 0, 1.125, -0.605039, 0.146521, 0.909863)
+
+[node name="015RearDeltAndPecFly" parent="machines/middle/Coloured" instance=ExtResource("33_vsgsv")]
+transform = Transform3D(1.165, 0, 0, 0, 1.05, 0, 0, 0, 1.135, 8.07981, 0.149796, 0.981982)
+
+[node name="012MidRow" parent="machines/middle/Coloured" instance=ExtResource("34_sr136")]
+transform = Transform3D(-3.89031e-08, 0, -0.745, 0, 0.86, 0, 0.89, 0, -3.2565e-08, 9.59863, 0.14259, 0.888497)
+
+[node name="011PecFly" parent="machines/middle/Coloured" instance=ExtResource("19_u0o2s")]
+transform = Transform3D(-1.19, 0, 1.76665e-07, 0, 1, 0, -1.79685e-07, 0, -1.17, 8.0879, 0.146521, -1.29971)
+
+[node name="003Pullover" parent="machines/middle/Coloured" instance=ExtResource("35_m1juo")]
+transform = Transform3D(8.38027e-08, 0, 1.345, 0, 1.18, 0, -1.11, 0, 1.01545e-07, 9.50459, 0.139085, -1.1987)
+
+[node name="003RotaryTorso" parent="machines/middle/Coloured" instance=ExtResource("35_m1juo")]
+transform = Transform3D(0.795, 0, 0, 0, 1, 0, 0, 0, 0.935, 11.3961, 0.139, -1.50776)
+
+[node name="002Abdominal" parent="machines/middle/Coloured" instance=ExtResource("23_m1juo")]
+transform = Transform3D(1.235, 0, 0, 0, 0.905, 0, 0, 0, 0.74, 11.3317, 0.192399, 1.42461)
+
+[node name="002Abdominal2" parent="machines/middle/Coloured" instance=ExtResource("23_m1juo")]
+transform = Transform3D(1.235, 0, 0, 0, 0.905, 0, 0, 0, 0.74, 11.3317, 0.192399, 0.045011)
+
+[node name="018Gravitron2" parent="machines/middle/Coloured" instance=ExtResource("36_me5hw")]
+transform = Transform3D(-4.37114e-08, 0, -1.655, 0, 1, 0, 1, 0, -7.23423e-08, -4.30958, 0.139696, -1.38742)
+
+[node name="019Weights" parent="machines/middle/Coloured" instance=ExtResource("37_n8fij")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9.49516, 0.139085, -0.474494)
+
+[node name="019Weights2" parent="machines/middle/Coloured" instance=ExtResource("37_n8fij")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9.49516, 0.139085, -2.54259)
+
+[node name="014FlatBench" parent="machines/middle/Coloured" instance=ExtResource("38_6cub7")]
+transform = Transform3D(-4.67712e-08, 0, -1.13, 0, 0.965, 0, 1.07, 0, -4.93939e-08, -8.56652, 0.20686, -0.872742)
+
+[node name="014FlatBench2" parent="machines/middle/Coloured" instance=ExtResource("38_6cub7")]
+transform = Transform3D(-4.67712e-08, 0, -1.13, 0, 0.965, 0, 1.07, 0, -4.93939e-08, -8.56652, 0.20686, 1.50471)
 
 [node name="bottom" type="Node3D" parent="machines"]
 
-[node name="CurvedTreadmill" type="CSGBox3D" parent="machines/bottom"]
+[node name="Boxes" type="Node3D" parent="machines/bottom"]
+visible = false
+
+[node name="CurvedTreadmill" type="CSGBox3D" parent="machines/bottom/Boxes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.87598, 0.939341, 4.66788)
 visible = false
 transparency = 0.55
 size = Vector3(0.97, 1.65, 1.66)
 
-[node name="CurvedTreadmill2" type="CSGBox3D" parent="machines/bottom"]
+[node name="CurvedTreadmill2" type="CSGBox3D" parent="machines/bottom/Boxes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.36622, 0.939341, 4.66788)
 visible = false
 transparency = 0.83
 size = Vector3(0.97, 1.65, 1.66)
 
-[node name="WoodwayTreadmill" type="CSGBox3D" parent="machines/bottom"]
+[node name="WoodwayTreadmill" type="CSGBox3D" parent="machines/bottom/Boxes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.73844, 0.968473, 4.54597)
-visible = false
 transparency = 0.8
 size = Vector3(1.22, 1.73, 1.93)
 
-[node name="WoodwayTreadmill2" type="CSGBox3D" parent="machines/bottom"]
+[node name="WoodwayTreadmill2" type="CSGBox3D" parent="machines/bottom/Boxes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.00903, 0.968473, 4.54597)
-visible = false
 transparency = 0.8
 size = Vector3(1.22, 1.73, 1.93)
 
-[node name="WoodwayTreadmill3" type="CSGBox3D" parent="machines/bottom"]
+[node name="WoodwayTreadmill3" type="CSGBox3D" parent="machines/bottom/Boxes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.26931, 0.968473, 4.54597)
-visible = false
 transparency = 0.8
 size = Vector3(1.22, 1.73, 1.93)
 
-[node name="NordicTrackTreadmill" type="CSGBox3D" parent="machines/bottom"]
+[node name="NordicTrackTreadmill" type="CSGBox3D" parent="machines/bottom/Boxes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.657376, 0.897192, 4.50572)
-visible = false
 transparency = 0.8
 size = Vector3(0.94, 1.52, 1.956)
 
-[node name="NordicTrackTreadmill2" type="CSGBox3D" parent="machines/bottom"]
+[node name="NordicTrackTreadmill2" type="CSGBox3D" parent="machines/bottom/Boxes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.811579, 0.897192, 4.50572)
-visible = false
 transparency = 0.8
 size = Vector3(0.94, 1.52, 1.956)
 
-[node name="Elliptical" type="CSGBox3D" parent="machines/bottom"]
+[node name="Elliptical" type="CSGBox3D" parent="machines/bottom/Boxes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.14958, 0.809086, 4.66719)
-visible = false
 transparency = 0.8
 size = Vector3(0.686, 1.346, 1.65)
 
-[node name="Elliptical2" type="CSGBox3D" parent="machines/bottom"]
+[node name="Elliptical2" type="CSGBox3D" parent="machines/bottom/Boxes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.35975, 0.809086, 4.66719)
-visible = false
 transparency = 0.8
 size = Vector3(0.686, 1.346, 1.65)
 
-[node name="Elliptical3" type="CSGBox3D" parent="machines/bottom"]
+[node name="Elliptical3" type="CSGBox3D" parent="machines/bottom/Boxes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.56855, 0.836035, 4.66719)
-visible = false
 transparency = 0.8
 size = Vector3(0.686, 1.346, 1.65)
 
-[node name="Elliptical4" type="CSGBox3D" parent="machines/bottom"]
+[node name="Elliptical4" type="CSGBox3D" parent="machines/bottom/Boxes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.77871, 0.832194, 4.66719)
-visible = false
 transparency = 0.8
 size = Vector3(0.686, 1.346, 1.65)
 
-[node name="Bike" type="CSGBox3D" parent="machines/bottom"]
+[node name="Bike" type="CSGBox3D" parent="machines/bottom/Boxes"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.15595, 0.920948, 4.71083)
-visible = false
 transparency = 0.75
 size = Vector3(1.55, 1.57, 0.97)
 
-[node name="IsoTrack" type="CSGBox3D" parent="machines/bottom"]
+[node name="IsoTrack" type="CSGBox3D" parent="machines/bottom/Boxes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.86454, 0.558568, 4.66344)
-visible = false
 transparency = 0.8
 size = Vector3(0.82, 1.65, 1.27)
 
-[node name="IsoTrack2" type="CSGBox3D" parent="machines/bottom"]
+[node name="IsoTrack2" type="CSGBox3D" parent="machines/bottom/Boxes"]
 transform = Transform3D(0.987781, 0, 0.155848, 0, 1, 0, -0.155848, 0, 0.987781, 10.7906, 0.558568, 4.50388)
-visible = false
 transparency = 0.8
 size = Vector3(0.82, 1.65, 1.27)
 
-[node name="curved treadmill_" parent="machines/bottom" instance=ExtResource("7_8mpic")]
-transform = Transform3D(-3.12536e-08, 0, -0.85, 0, 0.865, 0, 0.715, 0, -3.71547e-08, -8.88381, 0.949081, 4.68924)
+[node name="Old" type="Node3D" parent="machines/bottom"]
+visible = false
 
-[node name="curved treadmill_2" parent="machines/bottom" instance=ExtResource("7_8mpic")]
-transform = Transform3D(-3.12536e-08, 0, -0.85, 0, 0.865, 0, 0.715, 0, -3.71547e-08, -7.38063, 0.949081, 4.68924)
-
-[node name="SciFit Bike" parent="machines/bottom" instance=ExtResource("9_vcxfo")]
+[node name="SciFit Bike" parent="machines/bottom/Old" instance=ExtResource("9_vcxfo")]
 transform = Transform3D(1.445, 0, 0, 0, 1.13, 0, 0, 0, 1.58, 7.14975, 0.183006, 4.71011)
 visible = false
 
-[node name="005IsoTrack" parent="machines/bottom" instance=ExtResource("22_s3tam")]
+[node name="005IsoTrack" parent="machines/bottom/Old" instance=ExtResource("22_s3tam")]
 transform = Transform3D(-0.955, 0, 1.44201e-07, 0, 1, 0, -1.44201e-07, 0, -0.955, 8.83684, 0.0979518, 4.73223)
+visible = false
 
-[node name="005IsoTrack2" parent="machines/bottom" instance=ExtResource("22_s3tam")]
+[node name="005IsoTrack2" parent="machines/bottom/Old" instance=ExtResource("22_s3tam")]
 transform = Transform3D(-0.94581, 0, -0.132167, 0, 1, 0, 0.132167, 0, -0.94581, 10.8274, 0.0979518, 4.70066)
+visible = false
 
-[node name="007Treadmill" parent="machines/bottom" instance=ExtResource("23_hb0nr")]
+[node name="007Treadmill" parent="machines/bottom/Old" instance=ExtResource("23_hb0nr")]
 transform = Transform3D(-1.275, 0, -1.31366e-07, 0, 1.24, 0, 1.9252e-07, 0, -0.87, -5.66486, -0.0178728, 4.70198)
+visible = false
 
-[node name="007Treadmill2" parent="machines/bottom" instance=ExtResource("23_hb0nr")]
+[node name="007Treadmill2" parent="machines/bottom/Old" instance=ExtResource("23_hb0nr")]
 transform = Transform3D(-1.275, 0, -1.31366e-07, 0, 1.24, 0, 1.9252e-07, 0, -0.87, -3.9415, -0.0178728, 4.70198)
+visible = false
 
-[node name="007Treadmill3" parent="machines/bottom" instance=ExtResource("23_hb0nr")]
+[node name="007Treadmill3" parent="machines/bottom/Old" instance=ExtResource("23_hb0nr")]
 transform = Transform3D(-1.275, 0, -1.31366e-07, 0, 1.24, 0, 1.9252e-07, 0, -0.87, -2.1693, -0.0178728, 4.70198)
+visible = false
 
-[node name="007Treadmill4" parent="machines/bottom" instance=ExtResource("23_hb0nr")]
+[node name="007Treadmill4" parent="machines/bottom/Old" instance=ExtResource("23_hb0nr")]
 transform = Transform3D(-1.045, 0, -1.41181e-07, 0, 1.03, 0, 1.57791e-07, 0, -0.935, -0.577412, -0.0178728, 4.67391)
+visible = false
 
-[node name="007Treadmill5" parent="machines/bottom" instance=ExtResource("23_hb0nr")]
+[node name="007Treadmill5" parent="machines/bottom/Old" instance=ExtResource("23_hb0nr")]
 transform = Transform3D(-1.045, 0, -1.41181e-07, 0, 1.03, 0, 1.57791e-07, 0, -0.935, 0.896881, -0.0178728, 4.67391)
+visible = false
 
-[node name="002Elliptical" parent="machines/bottom" instance=ExtResource("27_x2q35")]
+[node name="002Elliptical" parent="machines/bottom/Old" instance=ExtResource("27_x2q35")]
 transform = Transform3D(-0.905, 0, 1.14757e-07, 0, 0.75, 0, -1.36651e-07, 0, -0.76, 4.54222, 0.159547, 4.43365)
+visible = false
 
-[node name="002Elliptical2" parent="machines/bottom" instance=ExtResource("27_x2q35")]
+[node name="002Elliptical2" parent="machines/bottom/Old" instance=ExtResource("27_x2q35")]
 transform = Transform3D(-0.905, 0, 1.14757e-07, 0, 0.75, 0, -1.36651e-07, 0, -0.76, 5.78011, 0.159547, 4.43365)
+visible = false
 
-[node name="002Elliptical3" parent="machines/bottom" instance=ExtResource("27_x2q35")]
+[node name="002Elliptical3" parent="machines/bottom/Old" instance=ExtResource("27_x2q35")]
 transform = Transform3D(-0.905, 0, 1.14757e-07, 0, 0.75, 0, -1.36651e-07, 0, -0.76, 3.30812, 0.159547, 4.43365)
+visible = false
 
-[node name="002Elliptical4" parent="machines/bottom" instance=ExtResource("27_x2q35")]
+[node name="002Elliptical4" parent="machines/bottom/Old" instance=ExtResource("27_x2q35")]
 transform = Transform3D(-0.905, 0, 1.14757e-07, 0, 0.75, 0, -1.36651e-07, 0, -0.76, 2.12873, 0.159547, 4.43365)
+visible = false
 
-[node name="003SciFitBike" parent="machines/bottom" instance=ExtResource("29_5e4cc")]
+[node name="003SciFitBike" parent="machines/bottom/Old" instance=ExtResource("29_5e4cc")]
 transform = Transform3D(-1.415, 0, -1.9252e-07, 0, 1, 0, 2.13659e-07, 0, -1.275, 7.1288, 0.237455, 4.29868)
+visible = false
+
+[node name="Coloured" type="Node3D" parent="machines/bottom"]
+
+[node name="005IsoTrack" parent="machines/bottom/Coloured" instance=ExtResource("32_3416m")]
+transform = Transform3D(-0.885, 0, -1.50996e-07, 0, 1, 0, 1.33631e-07, 0, -1, 8.8524, 0.139, 4.76194)
+
+[node name="005IsoTrack2" parent="machines/bottom/Coloured" instance=ExtResource("32_3416m")]
+transform = Transform3D(-0.874085, 0, -0.156573, 0, 1, 0, 0.138567, 0, -0.987666, 10.8148, 0.139, 4.64813)
+
+[node name="002Elliptical" parent="machines/bottom/Coloured" instance=ExtResource("33_tmjd1")]
+transform = Transform3D(-0.875, 0, 1.19287e-07, 0, 0.825, 0, -1.32121e-07, 0, -0.79, 5.77247, 0.209123, 4.46728)
+
+[node name="002Elliptical2" parent="machines/bottom/Coloured" instance=ExtResource("33_tmjd1")]
+transform = Transform3D(-0.875, 0, 1.19287e-07, 0, 0.825, 0, -1.32121e-07, 0, -0.79, 4.55647, 0.209123, 4.46728)
+
+[node name="002Elliptical3" parent="machines/bottom/Coloured" instance=ExtResource("33_tmjd1")]
+transform = Transform3D(-0.875, 0, 1.19287e-07, 0, 0.825, 0, -1.32121e-07, 0, -0.79, 3.34822, 0.209123, 4.46728)
+
+[node name="002Elliptical4" parent="machines/bottom/Coloured" instance=ExtResource("33_tmjd1")]
+transform = Transform3D(-0.875, 0, 1.19287e-07, 0, 0.825, 0, -1.32121e-07, 0, -0.79, 2.12209, 0.209123, 4.46728)
+
+[node name="007Treadmill" parent="machines/bottom/Coloured" instance=ExtResource("34_bmpe2")]
+transform = Transform3D(-1, 0, -1.23062e-07, 0, 1, 0, 1.50996e-07, 0, -0.815, 0.860383, 0.139086, 4.65665)
+
+[node name="007Treadmill2" parent="machines/bottom/Coloured" instance=ExtResource("34_bmpe2")]
+transform = Transform3D(-1, 0, -1.23062e-07, 0, 1, 0, 1.50996e-07, 0, -0.815, -0.587578, 0.139086, 4.65665)
+
+[node name="007Treadmill3" parent="machines/bottom/Coloured" instance=ExtResource("34_bmpe2")]
+transform = Transform3D(-1.23, 0, -1.34386e-07, 0, 1.075, 0, 1.85725e-07, 0, -0.89, -2.21047, 0.139086, 4.65665)
+
+[node name="007Treadmill4" parent="machines/bottom/Coloured" instance=ExtResource("34_bmpe2")]
+transform = Transform3D(-1.23, 0, -1.34386e-07, 0, 1.075, 0, 1.85725e-07, 0, -0.89, -3.89335, 0.139086, 4.65665)
+
+[node name="007Treadmill5" parent="machines/bottom/Coloured" instance=ExtResource("34_bmpe2")]
+transform = Transform3D(-1.23, 0, -1.34386e-07, 0, 1.075, 0, 1.85725e-07, 0, -0.89, -5.65517, 0.139086, 4.65665)
+
+[node name="curved treadmill_" parent="machines/bottom/Coloured" instance=ExtResource("7_8mpic")]
+transform = Transform3D(-3.12536e-08, 0, -0.85, 0, 0.865, 0, 0.715, 0, -3.71547e-08, -8.88381, 0.949081, 4.68924)
+
+[node name="curved treadmill_2" parent="machines/bottom/Coloured" instance=ExtResource("7_8mpic")]
+transform = Transform3D(-3.12536e-08, 0, -0.85, 0, 0.865, 0, 0.715, 0, -3.71547e-08, -7.38063, 0.949081, 4.68924)
+
+[node name="gym2_003" parent="machines/bottom/Coloured" instance=ExtResource("36_201fs")]
+transform = Transform3D(-1.425, 0, 1.7591e-07, 0, 1.05, 0, -2.15169e-07, 0, -1.165, 7.12513, 0.139085, 4.27089)
